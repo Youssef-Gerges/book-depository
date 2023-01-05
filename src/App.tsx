@@ -5,6 +5,8 @@ import './App.css';
 import { ProSidebarProvider } from 'react-pro-sidebar';
 import Footer from '@components/Footer';
 import HorizontalScrollCard from '@components/HorizontalScrollCard';
+import TextCard from '@components/TextCard';
+import { Col, Row, Container } from 'react-bootstrap';
 
 function App() {
   const testData = [
@@ -140,6 +142,52 @@ function App() {
       <ProSidebarProvider>
         <Nav />
       </ProSidebarProvider>
+      <Container fluid>
+        <Row>
+          <Col>
+            <TextCard
+              link={{ text: 'Great Books for children', location: '#' }}
+              icon="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/content/Childrens_Books.png"
+            />
+          </Col>
+          <Col>
+            <TextCard
+              link={{ text: 'Our Bookmarks', location: '#' }}
+              icon="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/content/Childrens_Books.png"
+            />
+          </Col>
+
+          <Col>
+            <TextCard
+              link={{ text: 'Our Bookmarks', location: '#' }}
+              icon="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/content/Childrens_Books.png"
+            />
+          </Col>
+          <Col>
+            <TextCard
+              link={{ text: 'Our Bookmarks', location: '#' }}
+              icon="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/content/Childrens_Books.png"
+            />
+          </Col>
+        </Row>
+        <Row className="mt-2">
+          <Col>
+            <TextCard
+              link={{ text: 'Great Books for children', location: '#' }}
+            />
+          </Col>
+          <Col>
+            <TextCard
+              link={{ text: 'Great Books for children', location: '#' }}
+            />
+          </Col>
+          <Col>
+            <TextCard
+              link={{ text: 'Great Books for children', location: '#' }}
+            />
+          </Col>
+        </Row>
+      </Container>
       <HorizontalScrollCard
         header="New and recent home and garden books"
         data={testData}
