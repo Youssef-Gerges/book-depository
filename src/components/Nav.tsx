@@ -10,7 +10,7 @@ import {
 import { MdOutlineKeyboardArrowDown, MdMenu } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import styles from './Nav.module.css';
-import { Col } from 'react-bootstrap';
+import { Button, Col } from 'react-bootstrap';
 import Row from 'react-bootstrap/esm/Row';
 import Container from 'react-bootstrap/esm/Container';
 import logo from '@assets/images/logo.svg';
@@ -108,12 +108,13 @@ const Nav = () => {
                 className={styles.search_input}
                 placeholder="Search for book by keyword / title / author / ISBN"
               />
-              <button
+              <Button
+                variant="primary"
                 className={`${styles.search_btn} py-2 px-xl-5 px-3 mx-xl-2`}
               >
                 <span className="d-none d-xl-inline">Search</span>
                 <BiSearch className="d-inline d-xl-none" />
-              </button>
+              </Button>
               <button
                 className={`${styles.search_btn_advanced} px-5 rounded ms-xl-0 ms-2 d-none d-md-inline`}
               >

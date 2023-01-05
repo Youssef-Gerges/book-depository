@@ -1,0 +1,71 @@
+.newsLatterImage {
+  width: 5rem;
+}
+
+.socialIcons {
+  font-size: 1.2rem;
+}
+
+.socialHeader {
+  color: #989998;
+  font-weight: 700;
+}
+
+.icon {
+  transition: color 0.3s ease;
+  color: #989998;
+}
+
+.facebook:hover {
+  color: #3b5998;
+}
+
+.twitter:hover {
+  color: #1ca1f3;
+}
+
+.pinterest:hover {
+  color: #c31d30;
+}
+
+.instagram:hover {
+  color: #ca5497;
+}
+
+.mainFooter {
+  background: #413043;
+  color: #fff;
+}
+
+.footerList {
+  width: 100%;
+}
+
+.footerList li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.432);
+  padding: 0.5rem 0;
+}
+
+.width,
+.newsParagraph {
+  width: 100%;
+}
+
+.newsParagraph {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  button.width {
+    width: 10rem !important;
+  }
+
+  input.width {
+    width: 15rem !important;
+  }
+
+  .newsParagraph {
+    text-align: left !important;
+    width: 50% !important;
+  }
+}

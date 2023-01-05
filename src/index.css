@@ -6,3 +6,12 @@
 html {
   font-family: 'pop';
 }
+
+.btn-primary {
+  background-color: #10bbd5 !important;
+  border: transparent !important;
+}
+
+.btn-primary:hover {
+  background: #29d5ef !important;
+}

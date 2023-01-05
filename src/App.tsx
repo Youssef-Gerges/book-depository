@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import './App.css';
 import { ProSidebarProvider } from 'react-pro-sidebar';
+import Footer from '@components/Footer';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <ProSidebarProvider>
         <Nav />
       </ProSidebarProvider>
+      <Footer />
     </div>
   );
 }

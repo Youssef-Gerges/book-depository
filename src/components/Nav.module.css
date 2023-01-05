@@ -54,14 +54,19 @@ nav a {
 .search_btn {
   background-color: #10bdd6;
   color: #fff;
-  border: none;
-  border-radius: 0 !important;
+  /* border: none; */
+  /* border-radius: 0 !important; */
 }
 
 .search_btn_advanced {
   background: transparent;
   border: 1px solid #d8d6d8;
   color: #d8d6d8;
+}
+
+.search_btn_advanced:hover {
+  border-color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
 }
 
 .bottom_bar {
@@ -141,9 +146,7 @@ nav a {
 
 @media (min-width: 576px) {
   .search_btn {
-    /* margin-left: -1rem !important; */
     z-index: 1000;
-    /* padding: 0 1rem; */
     border-radius: 0 !important;
   }
   .cart {
@@ -161,5 +164,9 @@ nav a {
     background: url('../assets/images/free-delivery-single-bg.png');
     background-repeat: no-repeat;
     background-size: contain;
+  }
+
+  .search_btn {
+    border-radius: 0.375rem !important;
   }
 }
