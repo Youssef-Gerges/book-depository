@@ -1,0 +1,31 @@
+.bookContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 10rem;
+  cursor: pointer;
+}
+.bookContainer a {
+  color: #000;
+}
+
+.bookContainer a:hover {
+  color: #000;
+  text-decoration: underline !important;
+}
+.bookContainer button {
+  width: 85%;
+  font-weight: 600;
+}
+
+.bookAuthor {
+  color: gray !important;
+  font-size: 0.8em;
+}
+
+.bookPrice {
+  padding-top: 0.5rem;
+  font-size: 1.1rem;
+  color: #ff0072;
+  font-weight: 500;
+}

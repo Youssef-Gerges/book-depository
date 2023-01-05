@@ -15,3 +15,7 @@ html {
 .btn-primary:hover {
   background: #29d5ef !important;
 }
+
+.hiddenScroll::-webkit-scrollbar {
+  width: 0;
+}
