@@ -1,0 +1,33 @@
+.itemsList {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.item {
+  width: 100%;
+  transition: background ease 0.3s;
+  padding: 0.2rem;
+}
+
+.item:hover,
+.clickAble:hover {
+  background: #f0f0f0;
+}
+
+.item a {
+  color: #000;
+}
+
+.footer {
+  color: #10bad4;
+  text-decoration: underline !important;
+  font-weight: 500;
+  width: 100%;
+  display: block;
+}
+
+.clickAble {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
