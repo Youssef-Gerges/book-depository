@@ -1,29 +1,28 @@
-import React, { useState } from 'react';
+import logo from '@assets/images/logo.svg';
+import { Button, Col } from 'react-bootstrap';
+import Dropdown from 'react-bootstrap/Dropdown';
+import Form from 'react-bootstrap/Form';
+import InputGroup from 'react-bootstrap/InputGroup';
+import Container from 'react-bootstrap/esm/Container';
+import Row from 'react-bootstrap/esm/Row';
 import { BiCompass, BiHeart, BiRocket, BiSearch } from 'react-icons/bi';
 import { HiOutlineExclamationCircle } from 'react-icons/hi';
+import { MdMenu, MdOutlineKeyboardArrowDown } from 'react-icons/md';
 import {
   RiAccountCircleFill,
   RiHome2Fill,
   RiMailLine,
   RiShoppingBasket2Fill,
 } from 'react-icons/ri';
-import { MdOutlineKeyboardArrowDown, MdMenu } from 'react-icons/md';
-import { Link } from 'react-router-dom';
-import styles from './Nav.module.css';
-import { Button, Col } from 'react-bootstrap';
-import Row from 'react-bootstrap/esm/Row';
-import Container from 'react-bootstrap/esm/Container';
-import logo from '@assets/images/logo.svg';
-import Form from 'react-bootstrap/Form';
-import InputGroup from 'react-bootstrap/InputGroup';
-import Dropdown from 'react-bootstrap/Dropdown';
 import {
-  Sidebar,
   Menu,
   MenuItem,
+  Sidebar,
   SubMenu,
   useProSidebar,
 } from 'react-pro-sidebar';
+import { Link } from 'react-router-dom';
+import styles from './Nav.module.css';
 
 const Nav = () => {
   const { collapseSidebar } = useProSidebar();
@@ -61,7 +60,7 @@ const Nav = () => {
               <BiHeart className={styles.icon} />
               <span className="p-2">Wishlist</span>
             </Link>
-            <Link to="/" className={`${styles.link_group} me-2`}>
+            <Link to="/auth" className={`${styles.link_group} me-2`}>
               <RiAccountCircleFill className={styles.icon} />
               <span className="p-2">Sign in/join</span>
             </Link>
@@ -361,7 +360,12 @@ const Nav = () => {
         </Row>
       </Container>
 
-      <Sidebar defaultCollapsed collapsedWidth="0px" className="border-0">
+      <Sidebar
+        defaultCollapsed
+        collapsedWidth="0px"
+        className="border-0 position-fixed bg-white"
+        style={{ zIndex: '10000' }}
+      >
         <Menu>
           <SubMenu label="Account & Help">
             <MenuItem>

@@ -1,0 +1,15 @@
+.forgotLink {
+  display: block;
+  text-align: right;
+  margin-bottom: 0.5rem;
+  color: #000 !important;
+}
+
+.helpLink {
+  border-bottom: 1px dotted;
+  color: #000 !important;
+}
+
+.helpP {
+  margin-top: 3rem;
+}

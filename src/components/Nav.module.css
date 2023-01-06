@@ -4,6 +4,10 @@ nav a {
   transition: 0.3s ease color;
 }
 
+.bottom_bar button:hover {
+  background-color: white !important;
+}
+
 .top_bar {
   background: #403143;
 }
