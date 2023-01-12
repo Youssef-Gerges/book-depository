@@ -6152,7 +6152,7 @@
         {
           "user_id": 77,
           "content": "Fusce consequat. Nulla nisl. Nunc nisl.",
-          "rating": 3.0
+          "rating": 3
         },
         {
           "user_id": 19,
@@ -6467,7 +6467,7 @@
         {
           "user_id": 80,
           "content": "Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.",
-          "rating": 4.0
+          "rating": 4
         },
         {
           "user_id": 53,
@@ -6780,7 +6780,7 @@
         {
           "user_id": 60,
           "content": "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.",
-          "rating": 3.0
+          "rating": 3
         },
         {
           "user_id": 44,
@@ -7006,7 +7006,7 @@
         {
           "user_id": 93,
           "content": "Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.",
-          "rating": 5.0
+          "rating": 5
         }
       ]
     },
@@ -7052,7 +7052,7 @@
         {
           "user_id": 39,
           "content": "Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.",
-          "rating": 4.0
+          "rating": 4
         },
         {
           "user_id": 68,
@@ -7207,7 +7207,7 @@
         {
           "user_id": 6,
           "content": "Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.",
-          "rating": 1.0
+          "rating": 1
         }
       ]
     },
@@ -7355,7 +7355,7 @@
         {
           "user_id": 77,
           "content": "Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.",
-          "rating": 1.0
+          "rating": 1
         },
         {
           "user_id": 47,
@@ -7476,7 +7476,7 @@
         {
           "user_id": 40,
           "content": "In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.",
-          "rating": 5.0
+          "rating": 5
         }
       ]
     },
@@ -7782,7 +7782,7 @@
         {
           "user_id": 35,
           "content": "Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.",
-          "rating": 5.0
+          "rating": 5
         }
       ]
     },
@@ -7828,12 +7828,12 @@
         {
           "user_id": 15,
           "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.",
-          "rating": 2.0
+          "rating": 2
         },
         {
           "user_id": 48,
           "content": "Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-          "rating": 4.0
+          "rating": 4
         }
       ]
     },
@@ -7873,7 +7873,7 @@
         {
           "user_id": 52,
           "content": "Phasellus in felis. Donec semper sapien a libero. Nam dui.",
-          "rating": 5.0
+          "rating": 5
         },
         {
           "user_id": 92,
@@ -7949,7 +7949,7 @@
         {
           "user_id": 66,
           "content": "Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.",
-          "rating": 5.0
+          "rating": 5
         },
         {
           "user_id": 43,
@@ -8034,7 +8034,7 @@
         {
           "user_id": 89,
           "content": "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.",
-          "rating": 1.0
+          "rating": 1
         }
       ]
     },
@@ -8101,7 +8101,7 @@
         {
           "user_id": 68,
           "content": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
-          "rating": 3.0
+          "rating": 3
         },
         {
           "user_id": 65,
@@ -8258,7 +8258,7 @@
         {
           "user_id": 26,
           "content": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.",
-          "rating": 5.0
+          "rating": 5
         },
         {
           "user_id": 32,
@@ -8620,7 +8620,7 @@
         {
           "user_id": 64,
           "content": "Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.",
-          "rating": 2.0
+          "rating": 2
         },
         {
           "user_id": 59,
@@ -8759,7 +8759,7 @@
         {
           "user_id": 30,
           "content": "Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
-          "rating": 3.0
+          "rating": 3
         },
         {
           "user_id": 59,
@@ -8932,7 +8932,7 @@
         {
           "user_id": 81,
           "content": "Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.",
-          "rating": 4.0
+          "rating": 4
         },
         {
           "user_id": 68,
@@ -9134,7 +9134,7 @@
         {
           "user_id": 79,
           "content": "Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.",
-          "rating": 4.0
+          "rating": 4
         },
         {
           "user_id": 63,
@@ -9729,7 +9729,7 @@
         {
           "user_id": 53,
           "content": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
-          "rating": 2.0
+          "rating": 2
         }
       ]
     },
@@ -9767,59 +9767,209 @@
     }
   ],
   "categories": [
-    { "id": 1, "name": "becoming" },
-    { "id": 1, "name": "attack" },
-    { "id": 1, "name": "frog" },
-    { "id": 1, "name": "tears" },
-    { "id": 1, "name": "present" },
-    { "id": 1, "name": "missing" },
-    { "id": 1, "name": "purple" },
-    { "id": 1, "name": "by" },
-    { "id": 1, "name": "grew" },
-    { "id": 1, "name": "little" }
+    {
+      "id": 1,
+      "name": "becoming"
+    },
+    {
+      "id": 1,
+      "name": "attack"
+    },
+    {
+      "id": 1,
+      "name": "frog"
+    },
+    {
+      "id": 1,
+      "name": "tears"
+    },
+    {
+      "id": 1,
+      "name": "present"
+    },
+    {
+      "id": 1,
+      "name": "missing"
+    },
+    {
+      "id": 1,
+      "name": "purple"
+    },
+    {
+      "id": 1,
+      "name": "by"
+    },
+    {
+      "id": 1,
+      "name": "grew"
+    },
+    {
+      "id": 1,
+      "name": "little"
+    }
   ],
   "lists": [
-    { "id": 1, "name": "news-books" },
-    { "id": 2, "name": "children-books" },
-    { "id": 3, "name": "fiction-books" },
-    { "id": 4, "name": "crime-books" },
-    { "id": 4, "name": "graphic-books" }
+    {
+      "id": 1,
+      "name": "news-books"
+    },
+    {
+      "id": 2,
+      "name": "children-books"
+    },
+    {
+      "id": 3,
+      "name": "fiction-books"
+    },
+    {
+      "id": 4,
+      "name": "crime-books"
+    },
+    {
+      "id": 4,
+      "name": "graphic-books"
+    }
   ],
   "orders": [
     {
       "id": 1,
       "user_id": 1,
-      "book_id": [1, 5, 100]
+      "book_id": [
+        1,
+        5,
+        100
+      ]
     },
     {
       "id": 2,
       "user_id": 1,
-      "book_id": [1, 6, 8]
+      "book_id": [
+        1,
+        6,
+        8
+      ]
     },
     {
       "id": 3,
       "user_id": 1,
-      "book_id": [1, 7, 10, 15, 18, 20, 100, 60]
+      "book_id": [
+        1,
+        7,
+        10,
+        15,
+        18,
+        20,
+        100,
+        60
+      ]
     },
     {
       "id": 4,
       "user_id": 1,
-      "book_id": [2, 5, 7, 80, 10]
+      "book_id": [
+        2,
+        5,
+        7,
+        80,
+        10
+      ]
     },
     {
       "id": 5,
       "user_id": 1,
-      "book_id": [3, 60, 30, 70, 77, 50, 100, 10, 11, 13, 15, 16]
+      "book_id": [
+        3,
+        60,
+        30,
+        70,
+        77,
+        50,
+        100,
+        10,
+        11,
+        13,
+        15,
+        16
+      ]
     },
     {
       "id": 6,
       "user_id": 1,
-      "book_id": [4, 10, 100, 11, 17, 8, 18, 9, 20]
+      "book_id": [
+        4,
+        10,
+        100,
+        11,
+        17,
+        8,
+        18,
+        9,
+        20
+      ]
     },
     {
       "id": 7,
       "user_id": 1,
-      "book_id": [3, 10, 100, 11, 17, 8, 18, 9, 20]
+      "book_id": [
+        3,
+        10,
+        100,
+        11,
+        17,
+        8,
+        18,
+        9,
+        20
+      ]
+    }
+  ],
+  "users": [
+    {
+      "email": "site@site.com",
+      "password": "",
+      "name": "joo",
+      "id": 1
+    },
+    {
+      "email": "site@site.com",
+      "password": "",
+      "name": "youssefgerges",
+      "id": 2
+    },
+    {
+      "email": "site@site.com",
+      "password": "",
+      "name": "book",
+      "id": 3
+    },
+    {
+      "email": "site@site.com",
+      "name": "title",
+      "id": 4
+    },
+    {
+      "email": "site@site.com",
+      "password": {},
+      "name": "joo",
+      "id": 5
+    },
+    {
+      "email": "site@site.com",
+      "password": "$2a$10$eLap4rH.aPAEqQwDOWUIheGLULDi7H0Vvh4nTWahVrHw1BMwTW3mq",
+      "name": "name",
+      "id": 6
+    },
+    {
+      "email": "dasld@dlsfkds.com",
+      "password": "$2a$10$BFK1c.0bFf2zJ62LrRlaFOprx0iu9gUtmVA3324Od5Oplsx3gywk.",
+      "name": "lfkdslfk",
+      "id": 7
+    },
+    {
+      "email": "admin@site.com",
+      "password": "$2a$10$u7Nkw89Le9dBEqvgEY/szO5ODTTv1waej/tHWMcgFUiJQxs9a8qAa",
+      "name": "admin",
+      "id": 8
     }
   ]
 }

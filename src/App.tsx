@@ -4,6 +4,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 import { ProSidebarProvider } from 'react-pro-sidebar';
 import { Route, Routes } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
 import AuthPage from './pages/AuthPage';
 
@@ -16,6 +18,7 @@ function App() {
       <Routes>
         <Route path="/auth" element={<AuthPage />} />
       </Routes>
+      <ToastContainer />
       <Footer />
     </div>
   );
