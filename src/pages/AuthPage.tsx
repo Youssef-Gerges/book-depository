@@ -1,3 +1,4 @@
+import AuthUtils from '@utils/AuthUtils.class';
 import React, { useState } from 'react';
 import {
   Alert,
@@ -8,11 +9,12 @@ import {
   Form,
   Row,
 } from 'react-bootstrap';
-import { useForm, SubmitHandler } from 'react-hook-form';
-import styles from './AuthPage.module.css';
-import AuthUtils from '@utils/AuthUtils.class';
+import { SubmitHandler, useForm } from 'react-hook-form';
+import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import { signIn } from 'src/store/UserSlice';
+import styles from './AuthPage.module.css';
 
 type joinFormValues = {
   joinEmail: string;
@@ -28,6 +30,8 @@ type signFormValues = {
 const AuthPage: React.FC = () => {
   const [signHidden, setSignHidden] = useState<boolean>(true);
   const [joinHidden, setJoinHidden] = useState<boolean>(true);
+  const dispatch = useDispatch();
+
   const {
     register: joinRegister,
     handleSubmit: joinHandler,
@@ -47,6 +51,7 @@ const AuthPage: React.FC = () => {
   ) => {
     if (await AuthUtils.signUser(formData.signEmail, formData.signPassword)) {
       sessionStorage.setItem('user', formData.signEmail);
+      dispatch(signIn(formData.signEmail));
       toast.success('Signed in successfully ☺');
       navigate('/');
     } else {
@@ -63,6 +68,7 @@ const AuthPage: React.FC = () => {
     )
       .then((res) => {
         sessionStorage.setItem('user', formData.joinEmail);
+        dispatch(signIn(formData.joinEmail));
         toast.success('account created successfully ☺');
         navigate('/');
       })
