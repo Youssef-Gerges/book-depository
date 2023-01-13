@@ -1,4 +1,5 @@
 import logo from '@assets/images/logo.svg';
+import { selectUser } from '@store/UserSlice';
 import { Button, Col } from 'react-bootstrap';
 import Dropdown from 'react-bootstrap/Dropdown';
 import Form from 'react-bootstrap/Form';
@@ -23,9 +24,11 @@ import {
 } from 'react-pro-sidebar';
 import { Link } from 'react-router-dom';
 import styles from './Nav.module.css';
+import { useSelector } from 'react-redux';
 
 const Nav = () => {
   const { collapseSidebar } = useProSidebar();
+  const user = useSelector(selectUser);
 
   const showHandler = (): void => {};
   return (
@@ -60,10 +63,18 @@ const Nav = () => {
               <BiHeart className={styles.icon} />
               <span className="p-2">Wishlist</span>
             </Link>
-            <Link to="/auth" className={`${styles.link_group} me-2`}>
-              <RiAccountCircleFill className={styles.icon} />
-              <span className="p-2">Sign in/join</span>
-            </Link>
+            {user.email ? (
+              <Link to="/account" className={`${styles.link_group} me-2`}>
+                <RiAccountCircleFill className={styles.icon} />
+                <span className="p-2">Account</span>
+              </Link>
+            ) : (
+              <Link to="/auth" className={`${styles.link_group} me-2`}>
+                {user.email}
+                <RiAccountCircleFill className={styles.icon} />
+                <span className="p-2">Sign in/join</span>
+              </Link>
+            )}
           </Col>
         </Row>
         <Row

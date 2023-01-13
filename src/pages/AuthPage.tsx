@@ -15,6 +15,7 @@ import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import { signIn } from 'src/store/UserSlice';
 import styles from './AuthPage.module.css';
+import useGuest from 'src/hooks/useGuest';
 
 type joinFormValues = {
   joinEmail: string;
@@ -28,9 +29,11 @@ type signFormValues = {
 };
 
 const AuthPage: React.FC = () => {
+  useGuest();
   const [signHidden, setSignHidden] = useState<boolean>(true);
   const [joinHidden, setJoinHidden] = useState<boolean>(true);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const {
     register: joinRegister,
@@ -44,13 +47,10 @@ const AuthPage: React.FC = () => {
     formState: { errors },
   } = useForm<signFormValues>();
 
-  const navigate = useNavigate();
-
   const signSubmitHandler: SubmitHandler<signFormValues> = async (
     formData: signFormValues
   ) => {
     if (await AuthUtils.signUser(formData.signEmail, formData.signPassword)) {
-      sessionStorage.setItem('user', formData.signEmail);
       dispatch(signIn(formData.signEmail));
       toast.success('Signed in successfully ☺');
       navigate('/');
@@ -67,7 +67,6 @@ const AuthPage: React.FC = () => {
       formData.name
     )
       .then((res) => {
-        sessionStorage.setItem('user', formData.joinEmail);
         dispatch(signIn(formData.joinEmail));
         toast.success('account created successfully ☺');
         navigate('/');
