@@ -1,12 +1,31 @@
 .bookContainer {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 0.5rem;
   width: 10rem;
+  height: 100%;
   cursor: pointer;
 }
+.bookContainer img {
+  width: 90px;
+  height: 150px;
+  object-fit: cover;
+}
+.bookContainer h6 {
+  line-height: 1rem;
+  height: 1rem;
+  width: 90%;
+  overflow: hidden;
+}
+
+.bookContainer h6:hover {
+  height: auto;
+}
+
 .bookContainer a {
   color: #000;
+  border-bottom: 1px transparent;
 }
 
 .bookContainer a:hover {

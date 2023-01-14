@@ -49,6 +49,10 @@ nav a {
   box-shadow: none !important;
 }
 
+.price_drop {
+  margin-bottom: 0 !important;
+}
+
 .search_icon {
   background-color: #fff !important;
   border-radius: 0 !important;
@@ -108,6 +112,7 @@ nav a {
 
 .total_price {
   border-right: 1px solid rgba(255, 255, 255, 0.398);
+  white-space: nowrap;
 }
 .cart_icon {
   font-size: 1.1rem;

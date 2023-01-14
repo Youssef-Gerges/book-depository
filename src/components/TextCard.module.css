@@ -19,6 +19,10 @@
   text-decoration: underline !important;
 }
 
+.textCard img {
+  max-width: 50px;
+}
+
 .link {
   display: flex;
   /* justify-content: center; */

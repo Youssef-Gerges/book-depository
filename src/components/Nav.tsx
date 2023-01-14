@@ -22,15 +22,31 @@ import {
   SubMenu,
   useProSidebar,
 } from 'react-pro-sidebar';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import styles from './Nav.module.css';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { changeCurrency, selectCart } from '@store/CartSlice';
+import { toast } from 'react-toastify';
 
 const Nav = () => {
   const { collapseSidebar } = useProSidebar();
+  const dispatch = useDispatch();
   const user = useSelector(selectUser);
+  const cart = useSelector(selectCart);
+  const navigate = useNavigate();
 
-  const showHandler = (): void => {};
+  const setEGP = (): void => {
+    dispatch(changeCurrency('EGP'));
+    toast.success('Currency changed to EGP.');
+    navigate(0);
+  };
+
+  const setUSD = (): void => {
+    dispatch(changeCurrency('USD'));
+    toast.success('Currency changed to USD.');
+    navigate(0);
+  };
+
   return (
     <nav>
       <Container fluid>
@@ -329,19 +345,19 @@ const Nav = () => {
           >
             <Dropdown className="menu-hover">
               <Dropdown.Toggle className={styles.menu_link}>
-                <span>$ USD</span>
+                <span>{cart.currency}</span>
                 <span className="ps-2">
                   <MdOutlineKeyboardArrowDown />
                 </span>
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
-                <ul>
-                  <li>EG</li>
-                  <li>SU</li>
-                  <li>MM</li>
-                  <li>EE</li>
-                  <li>LL</li>
+                <ul className={styles.price_drop}>
+                  {cart.currency === 'USD' ? (
+                    <li onClick={setEGP}>EGP</li>
+                  ) : (
+                    <li onClick={setUSD}>USD</li>
+                  )}
                 </ul>
               </Dropdown.Menu>
             </Dropdown>
@@ -350,7 +366,7 @@ const Nav = () => {
               className={` ${styles.cart} d-flex align-center justify-content-center px-3`}
             >
               <div className={`${styles.total_price} pe-3 me-3`}>
-                <span>$0</span>
+                <span>0 {cart.currency}</span>
               </div>
               <div className="d-flex align-center">
                 <span className="me-2">0</span>
@@ -390,12 +406,12 @@ const Nav = () => {
               <HiOutlineExclamationCircle className={styles.icon} />
               <span className="p-2">Help</span>
             </MenuItem>
-            <SubMenu label="$ USD">
-              <MenuItem>EG</MenuItem>
-              <MenuItem>SU</MenuItem>
-              <MenuItem>MM</MenuItem>
-              <MenuItem>EE</MenuItem>
-              <MenuItem>LL</MenuItem>
+            <SubMenu label={cart.currency}>
+              {cart.currency === 'USD' ? (
+                <MenuItem onClick={setEGP}>EGP</MenuItem>
+              ) : (
+                <MenuItem onClick={setUSD}>USD</MenuItem>
+              )}
             </SubMenu>
           </SubMenu>
           <SubMenu label="Shop">
