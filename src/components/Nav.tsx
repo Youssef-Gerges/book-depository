@@ -345,7 +345,7 @@ const Nav: React.FC = () => {
             <Link className="me-3" to="/">
               Coming Soon
             </Link>
-            <Link className="me-3" to="/">
+            <Link className="me-3" to="/new-releases">
               New Releases
             </Link>
           </Col>
@@ -433,7 +433,7 @@ const Nav: React.FC = () => {
             <SubMenu label="Categories"></SubMenu>
             <MenuItem>Bestsellers</MenuItem>
             <MenuItem>Coming Soon</MenuItem>
-            <MenuItem>New Releases</MenuItem>
+            <MenuItem href="/new-releases">New Releases</MenuItem>
           </SubMenu>
         </Menu>
       </Sidebar>

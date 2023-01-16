@@ -18,4 +18,9 @@ export default class BookUtils {
     const res = await api.get(`books?id=${id}&_expand=author`);
     return res.data[0];
   };
+
+  public static fetchBooks = async (query?: string): Promise<any[]> => {
+    const books = await api.get(`/books${query ?? ''}`);
+    return books.data;
+  };
 }
