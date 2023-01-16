@@ -110,6 +110,10 @@ nav a {
   font-size: 1.1rem !important;
 }
 
+.cart_count {
+  cursor: pointer;
+}
+
 .total_price {
   border-right: 1px solid rgba(255, 255, 255, 0.398);
   white-space: nowrap;

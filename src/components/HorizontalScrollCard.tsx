@@ -6,19 +6,11 @@ import { LeftArrow, RightArrow } from './Arrows';
 import styles from './HorizontalScrollCard.module.css';
 import BookUtils from '@utils/BookUtils.class';
 import { Link, useNavigate } from 'react-router-dom';
+import BookType from '@objTypes/BookType';
 
 interface HorizontalScrollCardInterface {
   header: string;
-  data:
-    | Array<{
-        id: number;
-        title: string;
-        cover: string;
-        author: string;
-        price: string;
-        reviews: [{ rating: number }] | null;
-      }>
-    | [];
+  data: Array<BookType>;
   btn: { text: string; click: MouseEventHandler<HTMLButtonElement> };
 }
 
@@ -56,26 +48,37 @@ const HorizontalScrollCard: React.FC<HorizontalScrollCardInterface> = ({
           scrollContainerClassName="hiddenScroll"
         >
           {data.map((book, index) => (
-            <div
-              key={index}
-              className={styles.bookContainer}
-              onClick={() => navigate(`/books/${book.id}`)}
-            >
-              <img src={book.cover} alt={book.title} />
+            <div key={index} className={styles.bookContainer}>
+              <img
+                src={book.cover}
+                alt={book.title}
+                onClick={() => navigate(`/books/${book.id}`)}
+              />
               <div>
                 <h6 className="p-0 m-0">
                   <Link to={`/books/${book.id}`}>{book.title}</Link>
                 </h6>
-                <a href="" className={styles.bookAuthor}>
-                  {book.author}
-                </a>
+                <Link
+                  to={`/authors/${book.author?.id}`}
+                  className={styles.bookAuthor}
+                >
+                  {book.author?.first_name} {book.author?.last_name}
+                </Link>
                 <div className={styles.rating}>
                   {renderRating(BookUtils.calcRating(book.reviews))} (
                   {book.reviews?.length ?? 0})
                 </div>
               </div>
-              <span className={styles.bookPrice}>{book.price}</span>
-              <Button variant="primary" onClick={btn.click}>
+              <span className={styles.bookPrice}>
+                {book.price.code}
+                {book.price.amount}
+              </span>
+              <Button
+                variant="primary"
+                data-product={book.id}
+                data-price={book.price.amount}
+                onClick={btn.click}
+              >
                 {btn.text}
               </Button>
             </div>

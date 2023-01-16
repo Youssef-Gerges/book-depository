@@ -1,5 +1,7 @@
 import logo from '@assets/images/logo.svg';
+import { changeCurrency, selectCart } from '@store/CartSlice';
 import { selectUser } from '@store/UserSlice';
+import React from 'react';
 import { Button, Col } from 'react-bootstrap';
 import Dropdown from 'react-bootstrap/Dropdown';
 import Form from 'react-bootstrap/Form';
@@ -22,18 +24,21 @@ import {
   SubMenu,
   useProSidebar,
 } from 'react-pro-sidebar';
-import { Link, useNavigate } from 'react-router-dom';
-import styles from './Nav.module.css';
 import { useDispatch, useSelector } from 'react-redux';
-import { changeCurrency, selectCart } from '@store/CartSlice';
+import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import useTotalCartCount from 'src/hooks/useTotalCartCount';
+import useTotalCartPrice from 'src/hooks/useTotalCartPrice';
+import styles from './Nav.module.css';
 
-const Nav = () => {
+const Nav: React.FC = () => {
   const { collapseSidebar } = useProSidebar();
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const user = useSelector(selectUser);
   const cart = useSelector(selectCart);
-  const navigate = useNavigate();
+  const totalCartPrice = useTotalCartPrice();
+  const totalCartCount = useTotalCartCount();
 
   const setEGP = (): void => {
     dispatch(changeCurrency('EGP'));
@@ -109,10 +114,15 @@ const Nav = () => {
                 className={` ${styles.cart} d-flex align-center justify-content-center px-3  `}
               >
                 <div className={`${styles.total_price} pe-3 me-3`}>
-                  <span>$0</span>
+                  <span>
+                    {totalCartPrice?.amount} {cart.currency}
+                  </span>
                 </div>
-                <div className="d-flex align-center">
-                  <span className="me-2">0</span>
+                <div
+                  className="d-flex align-center"
+                  onClick={() => navigate('/cart')}
+                >
+                  <span className="me-2">{totalCartCount}</span>
                   <span className={styles.cart_icon}>
                     <RiShoppingBasket2Fill className="icon" />
                   </span>
@@ -366,10 +376,15 @@ const Nav = () => {
               className={` ${styles.cart} d-flex align-center justify-content-center px-3`}
             >
               <div className={`${styles.total_price} pe-3 me-3`}>
-                <span>0 {cart.currency}</span>
+                <span>
+                  {totalCartPrice?.amount} {cart.currency}
+                </span>
               </div>
-              <div className="d-flex align-center">
-                <span className="me-2">0</span>
+              <div
+                className={`d-flex align-center ${styles.cart_count}`}
+                onClick={() => navigate('/cart')}
+              >
+                <span className="me-2">{totalCartCount}</span>
                 <span className={styles.cart_icon}>
                   <RiShoppingBasket2Fill className="icon" />
                 </span>

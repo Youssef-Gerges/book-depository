@@ -3,12 +3,13 @@ import AuthPage from '@pages/AuthPage';
 import App from 'src/App';
 import NotFoundPage from '@pages/NotFoundPage';
 import HomePage from '@pages/HomePage';
+import CartPage from '@pages/CartPage';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-    errorElement: <NotFoundPage />,
+    // errorElement: <NotFoundPage />,
     children: [
       {
         path: '/',
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: '/auth',
         element: <AuthPage />,
+      },
+      {
+        path: '/cart',
+        element: <CartPage />,
       },
     ],
   },

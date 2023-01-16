@@ -1,4 +1,6 @@
 import axios from 'axios';
+import api from './Api';
+import BookType from '@objTypes/BookType';
 
 export default class BookUtils {
   public static calcRating = (reviews: [{ rating: number }] | null) => {
@@ -12,24 +14,8 @@ export default class BookUtils {
     return 0;
   };
 
-  public static getPrice = async (amount: string): Promise<string> => {
-    const currency = localStorage.getItem('currency') ?? 'USD';
-    if (currency === 'USD') {
-      return `$ ${amount}`;
-    }
-
-    const res = await axios.get(
-      'https://currency-exchange.p.rapidapi.com/exchange',
-      {
-        params: { from: 'USD', to: 'EGP', q: amount },
-        headers: {
-          'X-RapidAPI-Key':
-            '3492fd8a44msh6e6ca1e85b4d121p1b3958jsn9971b2ab362e',
-          'X-RapidAPI-Host': 'currency-exchange.p.rapidapi.com',
-        },
-      }
-    );
-
-    return `E£ ${res.data}`;
+  public static getBookWithAuthor = async (id: number): Promise<BookType> => {
+    const res = await api.get(`books?id=${id}&_expand=author`);
+    return res.data[0];
   };
 }

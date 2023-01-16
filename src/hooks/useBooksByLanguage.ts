@@ -1,30 +1,25 @@
+import BookType from '@objTypes/BookType';
 import api from '@utils/Api';
 import BookUtils from '@utils/BookUtils.class';
+import PriceUtils from '@utils/PriceUtils';
 import { useEffect } from 'react';
 import { useState } from 'react';
 
-type bookType = {
-  id: number;
-  title: string;
-  cover: string;
-  author: string;
-  price: string;
-  reviews: [{ rating: number }] | null;
-};
-
 const useBooksByLanguage = (
   lang: string
-): { books: Array<bookType> | []; loading: boolean } => {
-  const [books, setBooks] = useState<Array<bookType> | []>([]);
+): { books: Array<BookType> | []; loading: boolean } => {
+  const [books, setBooks] = useState<Array<BookType> | []>([]);
   const [loading, setLoading] = useState<boolean>(true);
 
   const fetchBooks = async () => {
-    const res = await api.get(`/books?language=${lang}&_limit=10`);
+    const res = await api.get(
+      `/books?language=${lang}&_limit=10&_expand=author`
+    );
 
     let list = [];
 
     for (let book of res.data) {
-      list.push({ ...book, price: await BookUtils.getPrice(book.price) });
+      list.push({ ...book, price: await PriceUtils.getPrice(book.price) });
     }
 
     setBooks(list);

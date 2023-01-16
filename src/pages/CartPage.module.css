@@ -1,0 +1,17 @@
+.rowBorder {
+  border-bottom: 1px solid #d8d6d8;
+  padding-bottom: 1.5rem;
+}
+
+.smallP {
+  font-size: 0.8rem;
+}
+
+.priceColor {
+  color: #ff0072;
+}
+
+.orderSummery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
