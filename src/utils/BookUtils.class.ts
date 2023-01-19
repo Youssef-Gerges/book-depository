@@ -1,4 +1,4 @@
-import axios from 'axios';
+import axios, { AxiosPromise } from 'axios';
 import api from './Api';
 import BookType from '@objTypes/BookType';
 
@@ -19,8 +19,16 @@ export default class BookUtils {
     return res.data[0];
   };
 
-  public static fetchBooks = async (query?: string): Promise<any[]> => {
-    const books = await api.get(`/books${query ?? ''}`);
-    return books.data;
+  public static fetchBooks = async (query?: string): AxiosPromise<any> => {
+    const res = await api.get(`/books${query ?? ''}`);
+    return res;
+  };
+
+  public static getBooksByAuthorId = async (
+    authorId: string,
+    query?: string
+  ): AxiosPromise<BookType[]> => {
+    const res = await api.get(`/books?authorId=${authorId}${query ?? ''}`);
+    return res;
   };
 }

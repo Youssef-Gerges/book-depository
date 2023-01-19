@@ -24,16 +24,6 @@ const HomePage: React.FC = () => {
     { text: 'Books in Arabic', link: '/books?lang=Arabic' },
   ];
 
-  const addToCart = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-    dispatch(
-      addItemToCart({
-        id: Number.parseInt(e.currentTarget.dataset.product ?? ''),
-        price: Number.parseInt(e.currentTarget.dataset.price ?? ''),
-      })
-    );
-    toast.success('Book added to cart.');
-  };
-
   return (
     <Container fluid={true} className="mt-4">
       {recentLoading || langLoading ? (
@@ -60,10 +50,6 @@ const HomePage: React.FC = () => {
                 <HorizontalScrollCard
                   header="Recently Added"
                   data={recentlyBooks}
-                  btn={{
-                    text: 'Add to cart',
-                    click: addToCart,
-                  }}
                 />
               </Col>
             </Row>
@@ -111,10 +97,6 @@ const HomePage: React.FC = () => {
                 <HorizontalScrollCard
                   header="Books in Tajik"
                   data={spanishBooks}
-                  btn={{
-                    text: 'Add to cart',
-                    click: addToCart,
-                  }}
                 />
               </Col>
             </Row>

@@ -1,16 +1,27 @@
 import BookType from '@objTypes/BookType';
 import BookUtils from '@utils/BookUtils.class';
-import React, { MouseEventHandler } from 'react';
 import { Button } from 'react-bootstrap';
 import { MdStar, MdStarHalf } from 'react-icons/md';
 import { Link, useNavigate } from 'react-router-dom';
 import styles from './BookCard.module.css';
+import { useDispatch } from 'react-redux';
+import { addItemToCart } from '@store/CartSlice';
+import { toast } from 'react-toastify';
 
 const BookCard: React.FC<{
   book: BookType;
-  btn: { text: string; click: MouseEventHandler<HTMLButtonElement> };
-}> = ({ book, btn }) => {
+}> = ({ book }) => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
+  const addToCart = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    dispatch(
+      addItemToCart({
+        id: Number.parseInt(e.currentTarget.dataset.product ?? ''),
+        price: Number.parseInt(e.currentTarget.dataset.price ?? ''),
+      })
+    );
+    toast.success('Book added to cart.');
+  };
   const renderRating = (rate: number) => {
     let stars = [];
     for (let i = 0; i < 5; i++) {
@@ -43,6 +54,10 @@ const BookCard: React.FC<{
           {renderRating(BookUtils.calcRating(book.reviews))} (
           {book.reviews?.length ?? 0})
         </div>
+        <p className="p-0 m-0 text-secondary fs-6">
+          {new Date(book.publication_date).toDateString()}
+        </p>
+        <p className="p-0 m-0 text-secondary fs-6">{book.format}</p>
       </div>
       <span className={styles.bookPrice}>
         {book.price.code}
@@ -52,9 +67,9 @@ const BookCard: React.FC<{
         variant="primary"
         data-product={book.id}
         data-price={book.price.amount}
-        onClick={btn.click}
+        onClick={addToCart}
       >
-        {btn.text}
+        Add to basket
       </Button>
     </div>
   );

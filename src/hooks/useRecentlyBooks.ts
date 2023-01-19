@@ -13,7 +13,7 @@ const useRecentlyBooks = (
   const [loading, setLoading] = useState<boolean>(true);
 
   const fetchBooks = async () => {
-    const booksList = await BookUtils.fetchBooks(
+    const { data: booksList } = await BookUtils.fetchBooks(
       `?_limit=${limit}&_order=desc&_sort=id&_expand=author`
     );
     let list = [];

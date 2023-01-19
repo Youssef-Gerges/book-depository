@@ -8,13 +8,11 @@ import BookCard from './BookCard';
 interface HorizontalScrollCardInterface {
   header: string;
   data: Array<BookType>;
-  btn: { text: string; click: MouseEventHandler<HTMLButtonElement> };
 }
 
 const HorizontalScrollCard: React.FC<HorizontalScrollCardInterface> = ({
   header,
   data,
-  btn,
 }) => {
   return (
     <Card>
@@ -28,7 +26,7 @@ const HorizontalScrollCard: React.FC<HorizontalScrollCardInterface> = ({
           scrollContainerClassName="hiddenScroll"
         >
           {data.map((book, index) => (
-            <BookCard key={index} book={book} btn={btn} />
+            <BookCard key={index} book={book} />
           ))}
         </ScrollMenu>
       </Card.Body>

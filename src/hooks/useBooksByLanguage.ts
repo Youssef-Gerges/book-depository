@@ -12,13 +12,13 @@ const useBooksByLanguage = (
   const [loading, setLoading] = useState<boolean>(true);
 
   const fetchBooks = async () => {
-    const res = await api.get(
-      `/books?language=${lang}&_limit=10&_expand=author`
+    const { data: booksList } = await BookUtils.fetchBooks(
+      `?language=${lang}&_limit=10&_expand=author`
     );
 
     let list = [];
 
-    for (let book of res.data) {
+    for (let book of booksList) {
       list.push({ ...book, price: await PriceUtils.getPrice(book.price) });
     }
 

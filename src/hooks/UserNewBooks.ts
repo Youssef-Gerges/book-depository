@@ -14,7 +14,7 @@ const useNewBooks = () => {
     let booksList = [];
     if (allCategories) {
       for (let category of allCategories) {
-        let booksFetched = await BookUtils.fetchBooks(
+        let { data: booksFetched } = await BookUtils.fetchBooks(
           `?limit=20&categoryId=${category.id}&_expand=author`
         );
         if (booksFetched.length > 0) {

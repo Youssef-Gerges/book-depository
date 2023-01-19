@@ -5,6 +5,8 @@ import NotFoundPage from '@pages/NotFoundPage';
 import HomePage from '@pages/HomePage';
 import CartPage from '@pages/CartPage';
 import NewReleasesPage from '@pages/NewReleasesPage';
+import AuthorBooksPage from '@pages/AuthorBooksPage';
+import SingleBookPage from '@pages/SingleBookPage';
 
 const router = createBrowserRouter([
   {
@@ -28,6 +30,14 @@ const router = createBrowserRouter([
       {
         path: '/new-releases',
         element: <NewReleasesPage />,
+      },
+      {
+        path: '/authors/:id',
+        element: <AuthorBooksPage />,
+      },
+      {
+        path: '/books/:id',
+        element: <SingleBookPage />,
       },
     ],
   },

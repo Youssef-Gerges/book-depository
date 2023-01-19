@@ -1,12 +1,15 @@
+import AuthorType from './AuthorType';
+
 type BookType = {
   id: number;
   title: string;
   cover: string;
-  author?: { first_name: string; last_name: string; id: number };
+  author: AuthorType;
   price: { amount: string; code: string };
   reviews: [{ rating: number }] | null;
   format: string;
   language: string;
+  publication_date: string;
 };
 
 export default BookType;
