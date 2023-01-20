@@ -8,7 +8,7 @@ import { useEffect, useState } from 'react';
 import { useParams, useSearchParams } from 'react-router-dom';
 
 const useAuthorBooks = (query?: string) => {
-  const [author, setAuthor] = useState<AuthorType>(null);
+  const [author, setAuthor] = useState<AuthorType>();
   const [books, setBooks] = useState<BookType[]>([]);
   const [headers, setHeaders] = useState<any>();
   const [params, setParams] = useSearchParams();

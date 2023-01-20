@@ -7,10 +7,6 @@
   font-size: 0.8rem;
 }
 
-.priceColor {
-  color: #ff0072;
-}
-
 .orderSummery {
   display: grid;
   grid-template-columns: 1fr 1fr;

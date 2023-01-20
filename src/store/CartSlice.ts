@@ -13,7 +13,7 @@ type cartState = {
 const cartInitialState: cartState = {
   items: JSON.parse(localStorage.getItem('cartItems') ?? '[]'),
   currency: localStorage.getItem('currency') ?? 'USD',
-  totalCart: Number.parseInt(localStorage.getItem('totalCart') ?? '0'),
+  totalCart: Number.parseFloat(localStorage.getItem('totalCart') ?? '0'),
 };
 
 const CartSlice = createSlice({

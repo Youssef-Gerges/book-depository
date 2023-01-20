@@ -7,35 +7,14 @@ import styles from './BookCard.module.css';
 import { useDispatch } from 'react-redux';
 import { addItemToCart } from '@store/CartSlice';
 import { toast } from 'react-toastify';
+import Rating from './Rating';
+import AddToCartBtn from './AddToCartBtn';
 
 const BookCard: React.FC<{
   book: BookType;
 }> = ({ book }) => {
   const navigate = useNavigate();
-  const dispatch = useDispatch();
-  const addToCart = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-    dispatch(
-      addItemToCart({
-        id: Number.parseInt(e.currentTarget.dataset.product ?? ''),
-        price: Number.parseInt(e.currentTarget.dataset.price ?? ''),
-      })
-    );
-    toast.success('Book added to cart.');
-  };
-  const renderRating = (rate: number) => {
-    let stars = [];
-    for (let i = 0; i < 5; i++) {
-      if (rate >= 1) {
-        stars.push(<MdStar color="#FFD700" key={i} />);
-      } else if (rate >= 0.5) {
-        stars.push(<MdStarHalf color="#FFD700" key={i} />);
-      } else {
-        stars.push(<MdStar color="#D3D3D3" key={i} />);
-      }
-      rate--;
-    }
-    return stars;
-  };
+
   return (
     <div className={styles.bookContainer}>
       <img
@@ -50,10 +29,7 @@ const BookCard: React.FC<{
         <Link to={`/authors/${book.author?.id}`} className={styles.bookAuthor}>
           {book.author?.first_name} {book.author?.last_name}
         </Link>
-        <div className={styles.rating}>
-          {renderRating(BookUtils.calcRating(book.reviews))} (
-          {book.reviews?.length ?? 0})
-        </div>
+        <Rating book={book} />
         <p className="p-0 m-0 text-secondary fs-6">
           {new Date(book.publication_date).toDateString()}
         </p>
@@ -63,14 +39,11 @@ const BookCard: React.FC<{
         {book.price.code}
         {book.price.amount}
       </span>
-      <Button
-        variant="primary"
-        data-product={book.id}
-        data-price={book.price.amount}
-        onClick={addToCart}
-      >
-        Add to basket
-      </Button>
+
+      <AddToCartBtn
+        price={Number.parseInt(book.price.amount)}
+        bookId={book.id}
+      />
     </div>
   );
 };

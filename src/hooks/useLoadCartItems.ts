@@ -13,10 +13,10 @@ const useCartItems = () => {
     const fetch = async () => {
       let books: BookType[] = [];
       for (let book of cart.items) {
-        let result = await BookUtils.getBookWithAuthor(book.id);
-        let price = await PriceUtils.getPrice(result.price.toString());
-        result.price = price;
-        books.push(result);
+        let { data: result } = await BookUtils.getBookWithAuthor(book.id);
+        let price = await PriceUtils.getPrice(result[0].price.toString());
+        result[0].price = price;
+        books.push(result[0]);
       }
       setCartItems(books);
     };

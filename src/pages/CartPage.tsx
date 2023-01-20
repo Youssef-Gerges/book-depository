@@ -125,7 +125,7 @@ const CartPage: React.FC = () => {
                           {book.format}, {book.language} |{' '}
                           {book.author?.first_name} {book.author?.last_name}
                         </p>
-                        <p className={`m-0 fs-5 ${styles.priceColor}`}>
+                        <p className={`m-0 fs-5 priceColor`}>
                           {book.price.code}
                           {book.price.amount}
                         </p>
@@ -153,7 +153,7 @@ const CartPage: React.FC = () => {
                           >
                             +
                           </Button>
-                          <span className={`${styles.priceColor}`}>
+                          <span className={`priceColor`}>
                             {book.price.code}
                             {cart.items[index]?.qty *
                               Number.parseInt(book.price.amount)}
@@ -186,7 +186,7 @@ const CartPage: React.FC = () => {
                   <p>Delivery coast:</p>
                   <p>Free</p>
                   <p>Total:</p>
-                  <p className={styles.priceColor}>
+                  <p className="priceColor">
                     {totalCartPrice?.code}
                     {totalCartPrice?.amount}
                   </p>
