@@ -7,6 +7,9 @@ import CartPage from '@pages/CartPage';
 import NewReleasesPage from '@pages/NewReleasesPage';
 import AuthorBooksPage from '@pages/AuthorBooksPage';
 import SingleBookPage from '@pages/SingleBookPage';
+import CategoryBooksPage from '@pages/CategoryBooksPage';
+import ShopPage from '@pages/ShopPage';
+import ReadingListBooksPage from '@pages/ReadingListBooksPage';
 
 const router = createBrowserRouter([
   {
@@ -38,6 +41,18 @@ const router = createBrowserRouter([
       {
         path: '/books/:id',
         element: <SingleBookPage />,
+      },
+      {
+        path: '/categories/:id',
+        element: <CategoryBooksPage />,
+      },
+      {
+        path: '/reading-lists/:id',
+        element: <ReadingListBooksPage />,
+      },
+      {
+        path: '/shop',
+        element: <ShopPage />,
       },
     ],
   },

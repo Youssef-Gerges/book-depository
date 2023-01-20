@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import styles from './Footer.module.css';
 import { Button, Col, Container, Form, Row } from 'react-bootstrap';
 import newsLatter from '../assets/images/newsletter-icon.svg';
@@ -9,8 +9,20 @@ import {
   TfiInstagram,
 } from 'react-icons/tfi';
 import paymentOptions from '../assets/images/payment-options.png';
+import api from '@utils/Api';
+import { toast } from 'react-toastify';
 
 const Footer: React.FC = () => {
+  const emailInput = useRef<HTMLInputElement>(null);
+  const subscribeHandler = async () => {
+    if (emailInput.current?.value) {
+      await api.post('/subscribers', {
+        email: emailInput.current?.value,
+      });
+      toast.success('subscribed successfully.');
+    }
+    toast.error('Please enter email');
+  };
   return (
     <footer>
       <Container fluid>
@@ -35,8 +47,13 @@ const Footer: React.FC = () => {
                 type="email"
                 placeholder="Email address"
                 className={styles.width}
+                ref={emailInput}
               />
-              <Button variant="primary" className={styles.width}>
+              <Button
+                variant="primary"
+                className={styles.width}
+                onClick={subscribeHandler}
+              >
                 Sign up now
               </Button>
             </Form>

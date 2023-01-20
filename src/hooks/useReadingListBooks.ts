@@ -1,13 +1,13 @@
-import AuthorType from '@objTypes/AuthorType';
 import BookType from '@objTypes/BookType';
-import AuthorUtils from '@utils/AuthorUtils';
+import ReadingListType from '@objTypes/ReadingListType';
 import BookUtils from '@utils/BookUtils.class';
 import PriceUtils from '@utils/PriceUtils';
+import ReadingListUtils from '@utils/ReadingListUtils';
 import { useEffect, useState } from 'react';
 import { useParams, useSearchParams } from 'react-router-dom';
 
-const useAuthorBooks = (query?: string) => {
-  const [author, setAuthor] = useState<AuthorType>();
+const useReadingListBooks = (query?: string) => {
+  const [list, setList] = useState<ReadingListType>();
   const [books, setBooks] = useState<BookType[]>([]);
   const [headers, setHeaders] = useState<any>();
   const [params, setParams] = useSearchParams();
@@ -15,13 +15,13 @@ const useAuthorBooks = (query?: string) => {
 
   const { id } = useParams();
 
-  const fetchAuthor = async () => {
-    const authorFetch = await AuthorUtils.getAuthorById(id!);
-    setAuthor(authorFetch);
+  const fetchList = async () => {
+    const { data: listFetch } = await ReadingListUtils.getListById(id!);
+    setList(listFetch[0]);
   };
 
   const fetchBooks = async (q: string) => {
-    const { data: booksFetch, headers } = await BookUtils.getBooksByAuthorId(
+    const { data: booksFetch, headers } = await BookUtils.getBooksByListId(
       id!,
       `&_expand=author${query}${q}`
     );
@@ -48,11 +48,11 @@ const useAuthorBooks = (query?: string) => {
     if (language) q = q + '&language_like=' + language;
     if (format) q = q + '&format_like=' + format;
     if (price) q = q + '&price' + price;
-    fetchAuthor();
+    fetchList();
     fetchBooks(q);
   }, [id, query, params]);
 
-  return { author, books, headers, loading };
+  return { list, books, headers, loading };
 };
 
-export default useAuthorBooks;
+export default useReadingListBooks;

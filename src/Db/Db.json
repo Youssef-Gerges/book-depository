@@ -6032,7 +6032,7 @@
       ],
       "price": 2460,
       "categoryId": 5,
-      "list_id": 4,
+      "listId": 4,
       "cover": "http://dummyimage.com/150x236.png/cc0000/ffffff"
     },
     {
@@ -6060,17 +6060,17 @@
         {
           "userId": 54,
           "content": "Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.",
-          "rating": 3.0
+          "rating": 3
         },
         {
           "userId": 77,
           "content": "Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
-          "rating": 3.0
+          "rating": 3
         }
       ],
       "price": 1837,
       "categoryId": 1,
-      "list_id": 2,
+      "listId": 2,
       "cover": "http://dummyimage.com/150x249.png/ff4444/ffffff"
     },
     {
@@ -6118,7 +6118,7 @@
       ],
       "price": 2691,
       "categoryId": 4,
-      "list_id": 4,
+      "listId": 4,
       "cover": "http://dummyimage.com/150x213.png/cc0000/ffffff"
     },
     {
@@ -6140,7 +6140,7 @@
       "reviews": null,
       "price": 2480,
       "categoryId": 5,
-      "list_id": 5,
+      "listId": 5,
       "cover": "http://dummyimage.com/150x222.png/ff4444/ffffff"
     },
     {
@@ -6168,7 +6168,7 @@
         {
           "userId": 53,
           "content": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.",
-          "rating": 4.0
+          "rating": 4
         },
         {
           "userId": 93,
@@ -6183,7 +6183,7 @@
       ],
       "price": 2073,
       "categoryId": 5,
-      "list_id": 1,
+      "listId": 1,
       "cover": "http://dummyimage.com/150x244.png/cc0000/ffffff"
     },
     {
@@ -6231,7 +6231,7 @@
       ],
       "price": 1401,
       "categoryId": 5,
-      "list_id": 4,
+      "listId": 4,
       "cover": "http://dummyimage.com/150x205.png/ff4444/ffffff"
     },
     {
@@ -6254,12 +6254,12 @@
         {
           "userId": 88,
           "content": "Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
-          "rating": 3.0
+          "rating": 3
         }
       ],
       "price": 2369,
       "categoryId": 2,
-      "list_id": 1,
+      "listId": 1,
       "cover": "http://dummyimage.com/150x206.png/5fa2dd/ffffff"
     },
     {
@@ -6281,7 +6281,7 @@
       "reviews": null,
       "price": 1484,
       "categoryId": 4,
-      "list_id": 4,
+      "listId": 4,
       "cover": "http://dummyimage.com/150x219.png/cc0000/ffffff"
     },
     {
@@ -6309,7 +6309,7 @@
         {
           "userId": 46,
           "content": "Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.",
-          "rating": 2.0
+          "rating": 2
         },
         {
           "userId": 70,
@@ -6324,7 +6324,7 @@
       ],
       "price": 2780,
       "categoryId": 5,
-      "list_id": 2,
+      "listId": 2,
       "cover": "http://dummyimage.com/150x218.png/dddddd/000000"
     },
     {
@@ -6346,7 +6346,7 @@
       "reviews": null,
       "price": 1951,
       "categoryId": 5,
-      "list_id": 5,
+      "listId": 5,
       "cover": "http://dummyimage.com/150x234.png/cc0000/ffffff"
     },
     {
@@ -6384,7 +6384,7 @@
         {
           "userId": 44,
           "content": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
-          "rating": 4.0
+          "rating": 4
         },
         {
           "userId": 23,
@@ -6394,7 +6394,7 @@
       ],
       "price": 1190,
       "categoryId": 3,
-      "list_id": 5,
+      "listId": 5,
       "cover": "http://dummyimage.com/170x250.png/dddddd/000000"
     },
     {
@@ -6422,7 +6422,7 @@
       ],
       "price": 1246,
       "categoryId": 4,
-      "list_id": 3,
+      "listId": 3,
       "cover": "http://dummyimage.com/150x225.png/5fa2dd/ffffff"
     },
     {
@@ -6465,7 +6465,7 @@
       ],
       "price": 1956,
       "categoryId": 4,
-      "list_id": 4,
+      "listId": 4,
       "cover": "http://dummyimage.com/150x234.png/cc0000/ffffff"
     },
     {
@@ -6488,7 +6488,7 @@
         {
           "userId": 17,
           "content": "Fusce consequat. Nulla nisl. Nunc nisl.",
-          "rating": 4.0
+          "rating": 4
         },
         {
           "userId": 57,
@@ -6503,12 +6503,12 @@
         {
           "userId": 57,
           "content": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
-          "rating": 1.0
+          "rating": 1
         }
       ],
       "price": 2592,
       "categoryId": 4,
-      "list_id": 4,
+      "listId": 4,
       "cover": "http://dummyimage.com/150x237.png/5fa2dd/ffffff"
     },
     {
@@ -6531,7 +6531,7 @@
         {
           "userId": 13,
           "content": "Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
-          "rating": 5.0
+          "rating": 5
         },
         {
           "userId": 36,
@@ -6551,7 +6551,7 @@
       ],
       "price": 2257,
       "categoryId": 5,
-      "list_id": 4,
+      "listId": 4,
       "cover": "http://dummyimage.com/150x219.png/5fa2dd/ffffff"
     },
     {
@@ -6599,7 +6599,7 @@
       ],
       "price": 308,
       "categoryId": 2,
-      "list_id": 1,
+      "listId": 1,
       "cover": "http://dummyimage.com/150x215.png/cc0000/ffffff"
     },
     {
@@ -6637,7 +6637,7 @@
       ],
       "price": 1392,
       "categoryId": 2,
-      "list_id": 4,
+      "listId": 4,
       "cover": "http://dummyimage.com/150x230.png/dddddd/000000"
     },
     {
@@ -6670,7 +6670,7 @@
       ],
       "price": 1388,
       "categoryId": 3,
-      "list_id": 3,
+      "listId": 3,
       "cover": "http://dummyimage.com/150x217.png/ff4444/ffffff"
     },
     {
@@ -6692,7 +6692,7 @@
       "reviews": null,
       "price": 1166,
       "categoryId": 5,
-      "list_id": 3,
+      "listId": 3,
       "cover": "http://dummyimage.com/150x220.png/ff4444/ffffff"
     },
     {
@@ -6714,7 +6714,7 @@
       "reviews": null,
       "price": 625,
       "categoryId": 1,
-      "list_id": 2,
+      "listId": 2,
       "cover": "http://dummyimage.com/150x236.png/ff4444/ffffff"
     },
     {
@@ -6747,7 +6747,7 @@
       ],
       "price": 502,
       "categoryId": 5,
-      "list_id": 5,
+      "listId": 5,
       "cover": "http://dummyimage.com/150x205.png/ff4444/ffffff"
     },
     {
@@ -6785,7 +6785,7 @@
       ],
       "price": 2439,
       "categoryId": 3,
-      "list_id": 5,
+      "listId": 5,
       "cover": "http://dummyimage.com/150x220.png/dddddd/000000"
     },
     {
@@ -6807,7 +6807,7 @@
       "reviews": null,
       "price": 2079,
       "categoryId": 1,
-      "list_id": 3,
+      "listId": 3,
       "cover": "http://dummyimage.com/150x206.png/cc0000/ffffff"
     },
     {
@@ -6829,7 +6829,7 @@
       "reviews": null,
       "price": 2917,
       "categoryId": 1,
-      "list_id": 4,
+      "listId": 4,
       "cover": "http://dummyimage.com/150x204.png/dddddd/000000"
     },
     {
@@ -6862,7 +6862,7 @@
       ],
       "price": 601,
       "categoryId": 1,
-      "list_id": 3,
+      "listId": 3,
       "cover": "http://dummyimage.com/150x207.png/cc0000/ffffff"
     },
     {
@@ -6884,7 +6884,7 @@
       "reviews": [],
       "price": 2976,
       "categoryId": 2,
-      "list_id": 3,
+      "listId": 3,
       "cover": "http://dummyimage.com/150x212.png/cc0000/ffffff"
     },
     {
@@ -6906,7 +6906,7 @@
       "reviews": null,
       "price": 232,
       "categoryId": 4,
-      "list_id": 5,
+      "listId": 5,
       "cover": "http://dummyimage.com/150x224.png/dddddd/000000"
     },
     {
@@ -6934,7 +6934,7 @@
       ],
       "price": 2676,
       "categoryId": 1,
-      "list_id": 3,
+      "listId": 3,
       "cover": "http://dummyimage.com/150x204.png/dddddd/000000"
     },
     {
@@ -6982,7 +6982,7 @@
       ],
       "price": 1555,
       "categoryId": 1,
-      "list_id": 2,
+      "listId": 2,
       "cover": "http://dummyimage.com/150x245.png/ff4444/ffffff"
     },
     {
@@ -7004,7 +7004,7 @@
       "reviews": null,
       "price": 518,
       "categoryId": 3,
-      "list_id": 2,
+      "listId": 2,
       "cover": "http://dummyimage.com/150x250.png/cc0000/ffffff"
     },
     {
@@ -7052,7 +7052,7 @@
       ],
       "price": 1474,
       "categoryId": 3,
-      "list_id": 2,
+      "listId": 2,
       "cover": "http://dummyimage.com/150x238.png/5fa2dd/ffffff"
     },
     {
@@ -7074,7 +7074,7 @@
       "reviews": null,
       "price": 1280,
       "categoryId": 3,
-      "list_id": 1,
+      "listId": 1,
       "cover": "http://dummyimage.com/150x244.png/ff4444/ffffff"
     },
     {
@@ -7096,7 +7096,7 @@
       "reviews": null,
       "price": 634,
       "categoryId": 5,
-      "list_id": 5,
+      "listId": 5,
       "cover": "http://dummyimage.com/150x223.png/5fa2dd/ffffff"
     },
     {
@@ -7139,7 +7139,7 @@
       ],
       "price": 2224,
       "categoryId": 2,
-      "list_id": 3,
+      "listId": 3,
       "cover": "http://dummyimage.com/150x201.png/cc0000/ffffff"
     },
     {
@@ -7172,7 +7172,7 @@
         {
           "userId": 44,
           "content": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
-          "rating": 4.0
+          "rating": 4
         },
         {
           "userId": 74,
@@ -7187,7 +7187,7 @@
       ],
       "price": 564,
       "categoryId": 4,
-      "list_id": 2,
+      "listId": 2,
       "cover": "http://dummyimage.com/150x227.png/dddddd/000000"
     },
     {
@@ -7225,7 +7225,7 @@
       ],
       "price": 2663,
       "categoryId": 4,
-      "list_id": 5,
+      "listId": 5,
       "cover": "http://dummyimage.com/150x210.png/dddddd/000000"
     },
     {
@@ -7247,7 +7247,7 @@
       "reviews": null,
       "price": 1941,
       "categoryId": 3,
-      "list_id": 4,
+      "listId": 4,
       "cover": "http://dummyimage.com/150x229.png/cc0000/ffffff"
     },
     {
@@ -7270,7 +7270,7 @@
         {
           "userId": 2,
           "content": "Sed ante. Vivamus tortor. Duis mattis egestas metus.",
-          "rating": 3.0
+          "rating": 3
         },
         {
           "userId": 81,
@@ -7295,7 +7295,7 @@
       ],
       "price": 464,
       "categoryId": 4,
-      "list_id": 4,
+      "listId": 4,
       "cover": "http://dummyimage.com/150x230.png/dddddd/000000"
     },
     {
@@ -7317,7 +7317,7 @@
       "reviews": [],
       "price": 1936,
       "categoryId": 2,
-      "list_id": 4,
+      "listId": 4,
       "cover": "http://dummyimage.com/150x223.png/ff4444/ffffff"
     },
     {
@@ -7339,7 +7339,7 @@
       "reviews": [],
       "price": 675,
       "categoryId": 3,
-      "list_id": 2,
+      "listId": 2,
       "cover": "http://dummyimage.com/150x220.png/5fa2dd/ffffff"
     },
     {
@@ -7377,7 +7377,7 @@
       ],
       "price": 1657,
       "categoryId": 2,
-      "list_id": 2,
+      "listId": 2,
       "cover": "http://dummyimage.com/150x224.png/5fa2dd/ffffff"
     },
     {
@@ -7399,7 +7399,7 @@
       "reviews": [],
       "price": 148,
       "categoryId": 5,
-      "list_id": 3,
+      "listId": 3,
       "cover": "http://dummyimage.com/150x242.png/cc0000/ffffff"
     },
     {
@@ -7421,7 +7421,7 @@
       "reviews": null,
       "price": 882,
       "categoryId": 2,
-      "list_id": 4,
+      "listId": 4,
       "cover": "http://dummyimage.com/150x220.png/dddddd/000000"
     },
     {
@@ -7454,7 +7454,7 @@
       ],
       "price": 900,
       "categoryId": 5,
-      "list_id": 3,
+      "listId": 3,
       "cover": "http://dummyimage.com/150x245.png/cc0000/ffffff"
     },
     {
@@ -7476,7 +7476,7 @@
       "reviews": null,
       "price": 2538,
       "categoryId": 1,
-      "list_id": 2,
+      "listId": 2,
       "cover": "http://dummyimage.com/150x212.png/ff4444/ffffff"
     },
     {
@@ -7498,7 +7498,7 @@
       "reviews": [],
       "price": 126,
       "categoryId": 1,
-      "list_id": 4,
+      "listId": 4,
       "cover": "http://dummyimage.com/150x219.png/cc0000/ffffff"
     },
     {
@@ -7521,7 +7521,7 @@
         {
           "userId": 89,
           "content": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
-          "rating": 2.0
+          "rating": 2
         },
         {
           "userId": 40,
@@ -7546,7 +7546,7 @@
       ],
       "price": 2960,
       "categoryId": 3,
-      "list_id": 3,
+      "listId": 3,
       "cover": "http://dummyimage.com/150x210.png/ff4444/ffffff"
     },
     {
@@ -7568,7 +7568,7 @@
       "reviews": [],
       "price": 1619,
       "categoryId": 5,
-      "list_id": 2,
+      "listId": 2,
       "cover": "http://dummyimage.com/150x227.png/cc0000/ffffff"
     },
     {
@@ -7606,12 +7606,12 @@
         {
           "userId": 6,
           "content": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.",
-          "rating": 3.0
+          "rating": 3
         }
       ],
       "price": 2582,
       "categoryId": 5,
-      "list_id": 1,
+      "listId": 1,
       "cover": "http://dummyimage.com/150x217.png/5fa2dd/ffffff"
     },
     {
@@ -7654,7 +7654,7 @@
       ],
       "price": 660,
       "categoryId": 3,
-      "list_id": 4,
+      "listId": 4,
       "cover": "http://dummyimage.com/150x237.png/5fa2dd/ffffff"
     },
     {
@@ -7702,7 +7702,7 @@
       ],
       "price": 2588,
       "categoryId": 1,
-      "list_id": 5,
+      "listId": 5,
       "cover": "http://dummyimage.com/150x242.png/ff4444/ffffff"
     },
     {
@@ -7724,7 +7724,7 @@
       "reviews": [],
       "price": 2107,
       "categoryId": 1,
-      "list_id": 1,
+      "listId": 1,
       "cover": "http://dummyimage.com/150x233.png/ff4444/ffffff"
     },
     {
@@ -7746,7 +7746,7 @@
       "reviews": null,
       "price": 2545,
       "categoryId": 3,
-      "list_id": 4,
+      "listId": 4,
       "cover": "http://dummyimage.com/150x220.png/dddddd/000000"
     },
     {
@@ -7768,7 +7768,7 @@
       "reviews": null,
       "price": 910,
       "categoryId": 4,
-      "list_id": 3,
+      "listId": 3,
       "cover": "http://dummyimage.com/150x241.png/dddddd/000000"
     },
     {
@@ -7790,7 +7790,7 @@
       "reviews": [],
       "price": 2004,
       "categoryId": 4,
-      "list_id": 3,
+      "listId": 3,
       "cover": "http://dummyimage.com/150x246.png/5fa2dd/ffffff"
     },
     {
@@ -7818,7 +7818,7 @@
       ],
       "price": 392,
       "categoryId": 4,
-      "list_id": 5,
+      "listId": 5,
       "cover": "http://dummyimage.com/150x236.png/5fa2dd/ffffff"
     },
     {
@@ -7846,7 +7846,7 @@
         {
           "userId": 49,
           "content": "Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.",
-          "rating": 5.0
+          "rating": 5
         },
         {
           "userId": 66,
@@ -7866,7 +7866,7 @@
       ],
       "price": 2204,
       "categoryId": 2,
-      "list_id": 2,
+      "listId": 2,
       "cover": "http://dummyimage.com/150x239.png/ff4444/ffffff"
     },
     {
@@ -7888,7 +7888,7 @@
       "reviews": null,
       "price": 1597,
       "categoryId": 2,
-      "list_id": 3,
+      "listId": 3,
       "cover": "http://dummyimage.com/150x243.png/ff4444/ffffff"
     },
     {
@@ -7910,7 +7910,7 @@
       "reviews": null,
       "price": 2629,
       "categoryId": 5,
-      "list_id": 2,
+      "listId": 2,
       "cover": "http://dummyimage.com/150x240.png/ff4444/ffffff"
     },
     {
@@ -7932,7 +7932,7 @@
       "reviews": null,
       "price": 1194,
       "categoryId": 2,
-      "list_id": 5,
+      "listId": 5,
       "cover": "http://dummyimage.com/150x240.png/cc0000/ffffff"
     },
     {
@@ -7960,7 +7960,7 @@
         {
           "userId": 67,
           "content": "Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.",
-          "rating": 2.0
+          "rating": 2
         },
         {
           "userId": 90,
@@ -7975,7 +7975,7 @@
       ],
       "price": 2071,
       "categoryId": 3,
-      "list_id": 1,
+      "listId": 1,
       "cover": "http://dummyimage.com/150x216.png/ff4444/ffffff"
     },
     {
@@ -8003,7 +8003,7 @@
       ],
       "price": 1852,
       "categoryId": 3,
-      "list_id": 1,
+      "listId": 1,
       "cover": "http://dummyimage.com/150x207.png/5fa2dd/ffffff"
     },
     {
@@ -8036,7 +8036,7 @@
       ],
       "price": 2927,
       "categoryId": 2,
-      "list_id": 5,
+      "listId": 5,
       "cover": "http://dummyimage.com/150x222.png/cc0000/ffffff"
     },
     {
@@ -8059,7 +8059,7 @@
         {
           "userId": 72,
           "content": "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.",
-          "rating": 4.0
+          "rating": 4
         },
         {
           "userId": 13,
@@ -8069,7 +8069,7 @@
         {
           "userId": 62,
           "content": "Phasellus in felis. Donec semper sapien a libero. Nam dui.",
-          "rating": 2.0
+          "rating": 2
         },
         {
           "userId": 7,
@@ -8079,7 +8079,7 @@
       ],
       "price": 747,
       "categoryId": 1,
-      "list_id": 5,
+      "listId": 5,
       "cover": "http://dummyimage.com/150x221.png/5fa2dd/ffffff"
     },
     {
@@ -8127,7 +8127,7 @@
       ],
       "price": 526,
       "categoryId": 2,
-      "list_id": 1,
+      "listId": 1,
       "cover": "http://dummyimage.com/150x210.png/dddddd/000000"
     },
     {
@@ -8149,7 +8149,7 @@
       "reviews": null,
       "price": 2608,
       "categoryId": 1,
-      "list_id": 4,
+      "listId": 4,
       "cover": "http://dummyimage.com/150x243.png/cc0000/ffffff"
     },
     {
@@ -8172,7 +8172,7 @@
         {
           "userId": 64,
           "content": "Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.",
-          "rating": 1.0
+          "rating": 1
         },
         {
           "userId": 7,
@@ -8192,7 +8192,7 @@
       ],
       "price": 1004,
       "categoryId": 5,
-      "list_id": 1,
+      "listId": 1,
       "cover": "http://dummyimage.com/150x217.png/5fa2dd/ffffff"
     },
     {
@@ -8220,7 +8220,7 @@
       ],
       "price": 2440,
       "categoryId": 5,
-      "list_id": 5,
+      "listId": 5,
       "cover": "http://dummyimage.com/170x250.png/5fa2dd/ffffff"
     },
     {
@@ -8263,7 +8263,7 @@
       ],
       "price": 1020,
       "categoryId": 3,
-      "list_id": 3,
+      "listId": 3,
       "cover": "http://dummyimage.com/150x224.png/dddddd/000000"
     },
     {
@@ -8306,7 +8306,7 @@
       ],
       "price": 2352,
       "categoryId": 2,
-      "list_id": 2,
+      "listId": 2,
       "cover": "http://dummyimage.com/150x208.png/5fa2dd/ffffff"
     },
     {
@@ -8339,7 +8339,7 @@
       ],
       "price": 2640,
       "categoryId": 1,
-      "list_id": 1,
+      "listId": 1,
       "cover": "http://dummyimage.com/150x239.png/cc0000/ffffff"
     },
     {
@@ -8387,7 +8387,7 @@
       ],
       "price": 2203,
       "categoryId": 3,
-      "list_id": 4,
+      "listId": 4,
       "cover": "http://dummyimage.com/150x246.png/cc0000/ffffff"
     },
     {
@@ -8409,7 +8409,7 @@
       "reviews": null,
       "price": 2503,
       "categoryId": 1,
-      "list_id": 5,
+      "listId": 5,
       "cover": "http://dummyimage.com/150x232.png/cc0000/ffffff"
     },
     {
@@ -8431,7 +8431,7 @@
       "reviews": null,
       "price": 2589,
       "categoryId": 2,
-      "list_id": 3,
+      "listId": 3,
       "cover": "http://dummyimage.com/150x246.png/dddddd/000000"
     },
     {
@@ -8453,7 +8453,7 @@
       "reviews": [],
       "price": 2247,
       "categoryId": 5,
-      "list_id": 2,
+      "listId": 2,
       "cover": "http://dummyimage.com/150x244.png/dddddd/000000"
     },
     {
@@ -8491,12 +8491,12 @@
         {
           "userId": 50,
           "content": "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.",
-          "rating": 4.0
+          "rating": 4
         }
       ],
       "price": 2514,
       "categoryId": 4,
-      "list_id": 4,
+      "listId": 4,
       "cover": "http://dummyimage.com/150x234.png/dddddd/000000"
     },
     {
@@ -8518,7 +8518,7 @@
       "reviews": null,
       "price": 1998,
       "categoryId": 2,
-      "list_id": 4,
+      "listId": 4,
       "cover": "http://dummyimage.com/150x220.png/dddddd/000000"
     },
     {
@@ -8540,7 +8540,7 @@
       "reviews": null,
       "price": 1410,
       "categoryId": 2,
-      "list_id": 2,
+      "listId": 2,
       "cover": "http://dummyimage.com/150x241.png/5fa2dd/ffffff"
     },
     {
@@ -8562,7 +8562,7 @@
       "reviews": [],
       "price": 162,
       "categoryId": 5,
-      "list_id": 3,
+      "listId": 3,
       "cover": "http://dummyimage.com/150x225.png/ff4444/ffffff"
     },
     {
@@ -8584,7 +8584,7 @@
       "reviews": null,
       "price": 2156,
       "categoryId": 5,
-      "list_id": 3,
+      "listId": 3,
       "cover": "http://dummyimage.com/150x243.png/5fa2dd/ffffff"
     },
     {
@@ -8607,12 +8607,12 @@
         {
           "userId": 42,
           "content": "Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.",
-          "rating": 4.0
+          "rating": 4
         },
         {
           "userId": 57,
           "content": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
-          "rating": 4.0
+          "rating": 4
         },
         {
           "userId": 74,
@@ -8632,7 +8632,7 @@
       ],
       "price": 1136,
       "categoryId": 1,
-      "list_id": 4,
+      "listId": 4,
       "cover": "http://dummyimage.com/150x214.png/5fa2dd/ffffff"
     },
     {
@@ -8665,12 +8665,12 @@
         {
           "userId": 22,
           "content": "Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.",
-          "rating": 2.0
+          "rating": 2
         },
         {
           "userId": 61,
           "content": "Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.",
-          "rating": 1.0
+          "rating": 1
         },
         {
           "userId": 8,
@@ -8680,7 +8680,7 @@
       ],
       "price": 759,
       "categoryId": 3,
-      "list_id": 3,
+      "listId": 3,
       "cover": "http://dummyimage.com/150x229.png/cc0000/ffffff"
     },
     {
@@ -8702,7 +8702,7 @@
       "reviews": null,
       "price": 1422,
       "categoryId": 5,
-      "list_id": 4,
+      "listId": 4,
       "cover": "http://dummyimage.com/150x208.png/dddddd/000000"
     },
     {
@@ -8724,7 +8724,7 @@
       "reviews": [],
       "price": 2775,
       "categoryId": 3,
-      "list_id": 4,
+      "listId": 4,
       "cover": "http://dummyimage.com/150x246.png/cc0000/ffffff"
     },
     {
@@ -8767,7 +8767,7 @@
       ],
       "price": 2417,
       "categoryId": 1,
-      "list_id": 1,
+      "listId": 1,
       "cover": "http://dummyimage.com/150x217.png/dddddd/000000"
     },
     {
@@ -8789,7 +8789,7 @@
       "reviews": null,
       "price": 2590,
       "categoryId": 4,
-      "list_id": 3,
+      "listId": 3,
       "cover": "http://dummyimage.com/150x243.png/ff4444/ffffff"
     },
     {
@@ -8812,12 +8812,12 @@
         {
           "userId": 33,
           "content": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.",
-          "rating": 4.0
+          "rating": 4
         }
       ],
       "price": 160,
       "categoryId": 3,
-      "list_id": 1,
+      "listId": 1,
       "cover": "http://dummyimage.com/150x202.png/dddddd/000000"
     },
     {
@@ -8850,7 +8850,7 @@
       ],
       "price": 1384,
       "categoryId": 4,
-      "list_id": 2,
+      "listId": 2,
       "cover": "http://dummyimage.com/150x241.png/cc0000/ffffff"
     },
     {
@@ -8873,7 +8873,7 @@
         {
           "userId": 6,
           "content": "Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.",
-          "rating": 5.0
+          "rating": 5
         },
         {
           "userId": 20,
@@ -8893,7 +8893,7 @@
       ],
       "price": 1203,
       "categoryId": 3,
-      "list_id": 4,
+      "listId": 4,
       "cover": "http://dummyimage.com/150x244.png/dddddd/000000"
     },
     {
@@ -8915,7 +8915,7 @@
       "reviews": null,
       "price": 1979,
       "categoryId": 2,
-      "list_id": 2,
+      "listId": 2,
       "cover": "http://dummyimage.com/150x201.png/dddddd/000000"
     },
     {
@@ -8937,7 +8937,7 @@
       "reviews": null,
       "price": 628,
       "categoryId": 5,
-      "list_id": 3,
+      "listId": 3,
       "cover": "http://dummyimage.com/150x222.png/cc0000/ffffff"
     },
     {
@@ -8959,7 +8959,7 @@
       "reviews": [],
       "price": 798,
       "categoryId": 2,
-      "list_id": 2,
+      "listId": 2,
       "cover": "http://dummyimage.com/150x232.png/dddddd/000000"
     },
     {
@@ -8997,7 +8997,7 @@
       ],
       "price": 2198,
       "categoryId": 2,
-      "list_id": 3,
+      "listId": 3,
       "cover": "http://dummyimage.com/150x219.png/dddddd/000000"
     },
     {
@@ -9019,7 +9019,7 @@
       "reviews": null,
       "price": 720,
       "categoryId": 2,
-      "list_id": 4,
+      "listId": 4,
       "cover": "http://dummyimage.com/150x231.png/5fa2dd/ffffff"
     },
     {
@@ -9062,7 +9062,7 @@
       ],
       "price": 2402,
       "categoryId": 3,
-      "list_id": 3,
+      "listId": 3,
       "cover": "http://dummyimage.com/150x232.png/dddddd/000000"
     },
     {
@@ -9084,7 +9084,7 @@
       "reviews": [],
       "price": 609,
       "categoryId": 1,
-      "list_id": 3,
+      "listId": 3,
       "cover": "http://dummyimage.com/150x201.png/dddddd/000000"
     },
     {
@@ -9122,7 +9122,7 @@
       ],
       "price": 2854,
       "categoryId": 2,
-      "list_id": 5,
+      "listId": 5,
       "cover": "http://dummyimage.com/150x246.png/dddddd/000000"
     },
     {
@@ -9155,7 +9155,7 @@
       ],
       "price": 1813,
       "categoryId": 1,
-      "list_id": 5,
+      "listId": 5,
       "cover": "http://dummyimage.com/150x210.png/cc0000/ffffff"
     },
     {
@@ -9198,7 +9198,7 @@
       ],
       "price": 1442,
       "categoryId": 5,
-      "list_id": 4,
+      "listId": 4,
       "cover": "http://dummyimage.com/150x250.png/cc0000/ffffff"
     },
     {
@@ -9220,7 +9220,7 @@
       "reviews": null,
       "price": 1628,
       "categoryId": 5,
-      "list_id": 3,
+      "listId": 3,
       "cover": "http://dummyimage.com/150x216.png/dddddd/000000"
     }
   ],
@@ -9292,37 +9292,93 @@
     {
       "id": 1,
       "userId": 1,
-      "book_id": [1, 5, 100]
+      "book_id": [
+        1,
+        5,
+        100
+      ]
     },
     {
       "id": 2,
       "userId": 1,
-      "book_id": [1, 6, 8]
+      "book_id": [
+        1,
+        6,
+        8
+      ]
     },
     {
       "id": 3,
       "userId": 1,
-      "book_id": [1, 7, 10, 15, 18, 20, 100, 60]
+      "book_id": [
+        1,
+        7,
+        10,
+        15,
+        18,
+        20,
+        100,
+        60
+      ]
     },
     {
       "id": 4,
       "userId": 1,
-      "book_id": [2, 5, 7, 80, 10]
+      "book_id": [
+        2,
+        5,
+        7,
+        80,
+        10
+      ]
     },
     {
       "id": 5,
       "userId": 1,
-      "book_id": [3, 60, 30, 70, 77, 50, 100, 10, 11, 13, 15, 16]
+      "book_id": [
+        3,
+        60,
+        30,
+        70,
+        77,
+        50,
+        100,
+        10,
+        11,
+        13,
+        15,
+        16
+      ]
     },
     {
       "id": 6,
       "userId": 1,
-      "book_id": [4, 10, 100, 11, 17, 8, 18, 9, 20]
+      "book_id": [
+        4,
+        10,
+        100,
+        11,
+        17,
+        8,
+        18,
+        9,
+        20
+      ]
     },
     {
       "id": 7,
       "userId": 1,
-      "book_id": [3, 10, 100, 11, 17, 8, 18, 9, 20]
+      "book_id": [
+        3,
+        10,
+        100,
+        11,
+        17,
+        8,
+        18,
+        9,
+        20
+      ]
     }
   ],
   "users": [
@@ -9372,6 +9428,12 @@
       "password": "$2a$10$u7Nkw89Le9dBEqvgEY/szO5ODTTv1waej/tHWMcgFUiJQxs9a8qAa",
       "name": "admin",
       "id": 8
+    }
+  ],
+  "subscribers": [
+    {
+      "email": "admin@site.com",
+      "id": 1
     }
   ]
 }

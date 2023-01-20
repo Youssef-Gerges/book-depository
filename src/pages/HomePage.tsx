@@ -12,7 +12,6 @@ import useRecentlyBooks from 'src/hooks/useRecentlyBooks';
 
 const HomePage: React.FC = () => {
   const readingLists = useAllReadingLists();
-  const dispatch = useDispatch();
   const { books: spanishBooks, loading: langLoading } =
     useBooksByLanguage('Tajik');
   const { books: recentlyBooks, loading: recentLoading } = useRecentlyBooks(10);
@@ -105,7 +104,7 @@ const HomePage: React.FC = () => {
                 <TextCard
                   link={{
                     text: 'Computer Books',
-                    location: '/categories/computer-books',
+                    location: '/categories/1',
                   }}
                   icon="https://img.icons8.com/office/512/monitor.png"
                 />
@@ -114,7 +113,7 @@ const HomePage: React.FC = () => {
                 <TextCard
                   link={{
                     text: 'Children Books',
-                    location: '/categories/children-books',
+                    location: '/categories/2',
                   }}
                   icon="https://img.icons8.com/ios/512/children.png"
                 />
@@ -123,7 +122,7 @@ const HomePage: React.FC = () => {
                 <TextCard
                   link={{
                     text: 'Children Books',
-                    location: '/categories/music-books',
+                    location: '/categories/3',
                   }}
                   icon="https://img.icons8.com/ios/512/aipods-pro-max.png"
                 />

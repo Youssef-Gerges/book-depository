@@ -1,27 +1,28 @@
 import AuthorType from '@objTypes/AuthorType';
 import BookType from '@objTypes/BookType';
+import CategoryType from '@objTypes/CategoryType';
 import AuthorUtils from '@utils/AuthorUtils';
 import BookUtils from '@utils/BookUtils.class';
+import CategoryUtils from '@utils/CategoryUtils';
 import PriceUtils from '@utils/PriceUtils';
 import { useEffect, useState } from 'react';
 import { useParams, useSearchParams } from 'react-router-dom';
 
-const useAuthorBooks = (query?: string) => {
-  const [author, setAuthor] = useState<AuthorType>();
+const useCategoryBooks = (query?: string) => {
+  const [category, setCategory] = useState<CategoryType>();
   const [books, setBooks] = useState<BookType[]>([]);
   const [headers, setHeaders] = useState<any>();
   const [params, setParams] = useSearchParams();
   const [loading, setLoading] = useState<boolean>(true);
-
   const { id } = useParams();
 
   const fetchAuthor = async () => {
-    const authorFetch = await AuthorUtils.getAuthorById(id!);
-    setAuthor(authorFetch);
+    const { data: categoryFetch } = await CategoryUtils.getCategoryById(id!);
+    setCategory(categoryFetch[0]);
   };
 
   const fetchBooks = async (q: string) => {
-    const { data: booksFetch, headers } = await BookUtils.getBooksByAuthorId(
+    const { data: booksFetch, headers } = await BookUtils.getBooksByCategoryId(
       id!,
       `&_expand=author${query}${q}`
     );
@@ -52,7 +53,7 @@ const useAuthorBooks = (query?: string) => {
     fetchBooks(q);
   }, [id, query, params]);
 
-  return { author, books, headers, loading };
+  return { category, books, headers, loading };
 };
 
-export default useAuthorBooks;
+export default useCategoryBooks;

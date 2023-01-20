@@ -1,20 +1,17 @@
+import ReadingListType from '@objTypes/ReadingListType';
 import api from '@utils/Api';
+import ReadingListUtils from '@utils/ReadingListUtils';
 import { useEffect } from 'react';
 import { useState } from 'react';
-
-type readingListType = {
-  name: string;
-  id: number;
-};
 
 const useAllReadingLists = (): Array<{ text: string; link: string }> | [] => {
   const [readingLists, setReadingLists] = useState<
     Array<{ text: string; link: string }> | []
   >([]);
   const fetch = async () => {
-    const res = await api.get('/lists');
+    const readingLists = await ReadingListUtils.fetchAll();
 
-    let list = res.data.map((list: readingListType) => {
+    let list = readingLists.map((list: ReadingListType) => {
       return { text: list.name, link: `/reading-lists/${list.id}` };
     });
     setReadingLists(list);

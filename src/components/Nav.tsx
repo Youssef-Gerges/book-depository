@@ -1,7 +1,7 @@
 import logo from '@assets/images/logo.svg';
 import { changeCurrency, selectCart } from '@store/CartSlice';
 import { selectUser } from '@store/UserSlice';
-import React from 'react';
+import React, { useRef } from 'react';
 import { Button, Col } from 'react-bootstrap';
 import Dropdown from 'react-bootstrap/Dropdown';
 import Form from 'react-bootstrap/Form';
@@ -30,15 +30,18 @@ import { toast } from 'react-toastify';
 import useTotalCartCount from 'src/hooks/useTotalCartCount';
 import useTotalCartPrice from 'src/hooks/useTotalCartPrice';
 import styles from './Nav.module.css';
+import useGetCategories from 'src/hooks/useGetCategories';
 
 const Nav: React.FC = () => {
   const { collapseSidebar } = useProSidebar();
+  const searchInput = useRef<HTMLInputElement>(null);
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const user = useSelector(selectUser);
   const cart = useSelector(selectCart);
   const totalCartPrice = useTotalCartPrice();
   const totalCartCount = useTotalCartCount();
+  const categories = useGetCategories();
 
   const setEGP = (): void => {
     dispatch(changeCurrency('EGP'));
@@ -50,6 +53,10 @@ const Nav: React.FC = () => {
     dispatch(changeCurrency('USD'));
     toast.success('Currency changed to USD.');
     navigate(0);
+  };
+
+  const handleSearch = () => {
+    navigate('/shop?keyword=' + searchInput.current?.value);
   };
 
   return (
@@ -143,16 +150,19 @@ const Nav: React.FC = () => {
                 aria-describedby="basic-addon1"
                 className={styles.search_input}
                 placeholder="Search for book by keyword / title / author / ISBN"
+                ref={searchInput}
               />
               <Button
                 variant="primary"
                 className={`${styles.search_btn} py-2 px-xl-5 px-3 mx-xl-2`}
+                onClick={handleSearch}
               >
                 <span className="d-none d-xl-inline">Search</span>
                 <BiSearch className="d-inline d-xl-none" />
               </Button>
               <button
                 className={`${styles.search_btn_advanced} px-5 rounded ms-xl-0 ms-2 d-none d-md-inline`}
+                onClick={() => navigate('/shop')}
               >
                 Advanced Search
               </button>
@@ -174,177 +184,20 @@ const Nav: React.FC = () => {
                   <Col className={styles.dropCol}>
                     <h4 className={styles.colHeader}>Top Categories</h4>
                     <div className=" d-flex flex-column">
-                      <Link to="/" className={styles.item}>
-                        Category 1
-                      </Link>
-                      <Link to="/" className={styles.item}>
-                        Category 2
-                      </Link>
-                      <Link to="/" className={styles.item}>
-                        Category 3
-                      </Link>
-                      <Link to="/" className={styles.item}>
-                        Category 4
-                      </Link>
-                      <Link to="/" className={styles.item}>
-                        Category 5
-                      </Link>
-                      <Link to="/" className={styles.item}>
-                        Category 6
-                      </Link>
-                      <Link to="/" className={styles.item}>
-                        Category 7
-                      </Link>
-                      <Link to="/" className={styles.item}>
-                        Category 8
-                      </Link>
-                    </div>
-                  </Col>
-                  <Col className={styles.dropCol}>
-                    <h4 className={styles.colHeader}>Top Categories</h4>
-                    <Row>
-                      <Col className="d-flex flex-column">
-                        <Link to="/" className={styles.item}>
-                          Category 1
+                      {categories?.map((category, index) => (
+                        <Link
+                          to={`/categories/${category.id}`}
+                          className={styles.item}
+                          key={index}
+                        >
+                          {category.name}
                         </Link>
-                        <Link to="/" className={styles.item}>
-                          Category 2
-                        </Link>
-                        <Link to="/" className={styles.item}>
-                          Category 3
-                        </Link>
-                        <Link to="/" className={styles.item}>
-                          Category 4
-                        </Link>
-                        <Link to="/" className={styles.item}>
-                          Category 5
-                        </Link>
-                        <Link to="/" className={styles.item}>
-                          Category 6
-                        </Link>
-                        <Link to="/" className={styles.item}>
-                          Category 7
-                        </Link>
-                        <Link to="/" className={styles.item}>
-                          Category 8
-                        </Link>
-                      </Col>
-                      <Col className="d-flex flex-column">
-                        <Link to="/" className={styles.item}>
-                          Category 4
-                        </Link>
-                        <Link to="/" className={styles.item}>
-                          Category 5
-                        </Link>
-                        <Link to="/" className={styles.item}>
-                          Category 6
-                        </Link>
-                        <Link to="/" className={styles.item}>
-                          Category 7
-                        </Link>
-                        <Link to="/" className={styles.item}>
-                          Category 8
-                        </Link>
-                        <Link to="/" className={styles.item}>
-                          Category 4
-                        </Link>
-                        <Link to="/" className={styles.item}>
-                          Category 5
-                        </Link>
-                        <Link to="/" className={styles.item}>
-                          Category 6
-                        </Link>
-                        <Link to="/" className={styles.item}>
-                          Category 7
-                        </Link>
-                        <Link to="/" className={styles.item}>
-                          Category 8
-                        </Link>
-                        <Link to="/" className={styles.item}>
-                          Category 4
-                        </Link>
-                        <Link to="/" className={styles.item}>
-                          Category 5
-                        </Link>
-                        <Link to="/" className={styles.item}>
-                          Category 6
-                        </Link>
-                        <Link to="/" className={styles.item}>
-                          Category 7
-                        </Link>
-                        <Link to="/" className={styles.item}>
-                          Category 8
-                        </Link>
-                      </Col>
-                    </Row>
-                  </Col>
-                  <Col className={styles.dropCol}>
-                    <h4 className={styles.colHeader}>Top Categories</h4>
-                    <div className=" d-flex flex-column">
-                      <Link to="/" className={styles.item}>
-                        Category 1
-                      </Link>
-                      <Link to="/" className={styles.item}>
-                        Category 2
-                      </Link>
-                      <Link to="/" className={styles.item}>
-                        Category 3
-                      </Link>
-                      <Link to="/" className={styles.item}>
-                        Category 4
-                      </Link>
-                      <Link to="/" className={styles.item}>
-                        Category 5
-                      </Link>
-                      <Link to="/" className={styles.item}>
-                        Category 6
-                      </Link>
-                      <Link to="/" className={styles.item}>
-                        Category 7
-                      </Link>
-                      <Link to="/" className={styles.item}>
-                        Category 8
-                      </Link>
-                    </div>
-                  </Col>
-                  <Col className={styles.dropCol}>
-                    <h4 className={styles.colHeader}>Top Categories</h4>
-                    <div className=" d-flex flex-column">
-                      <Link to="/" className={styles.item}>
-                        Category 1
-                      </Link>
-                      <Link to="/" className={styles.item}>
-                        Category 2
-                      </Link>
-                      <Link to="/" className={styles.item}>
-                        Category 3
-                      </Link>
-                      <Link to="/" className={styles.item}>
-                        Category 4
-                      </Link>
-                      <Link to="/" className={styles.item}>
-                        Category 5
-                      </Link>
-                      <Link to="/" className={styles.item}>
-                        Category 6
-                      </Link>
-                      <Link to="/" className={styles.item}>
-                        Category 7
-                      </Link>
-                      <Link to="/" className={styles.item}>
-                        Category 8
-                      </Link>
+                      ))}
                     </div>
                   </Col>
                 </Row>
               </Dropdown.Menu>
             </Dropdown>
-            <Link className="me-3" to="/">
-              Bestsellers
-            </Link>
-            <Link className="me-3" to="/">
-              Coming Soon
-            </Link>
             <Link className="me-3" to="/new-releases">
               New Releases
             </Link>
@@ -430,9 +283,15 @@ const Nav: React.FC = () => {
             </SubMenu>
           </SubMenu>
           <SubMenu label="Shop">
-            <SubMenu label="Categories"></SubMenu>
-            <MenuItem>Bestsellers</MenuItem>
-            <MenuItem>Coming Soon</MenuItem>
+            <SubMenu label="Categories">
+              {categories?.map((category, index) => {
+                return (
+                  <MenuItem href={`/categories/${category.id}`} key={index}>
+                    {category.name}
+                  </MenuItem>
+                );
+              })}
+            </SubMenu>
             <MenuItem href="/new-releases">New Releases</MenuItem>
           </SubMenu>
         </Menu>

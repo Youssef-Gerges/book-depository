@@ -6,24 +6,15 @@ import PriceUtils from '@utils/PriceUtils';
 import { useEffect, useState } from 'react';
 import { useParams, useSearchParams } from 'react-router-dom';
 
-const useAuthorBooks = (query?: string) => {
-  const [author, setAuthor] = useState<AuthorType>();
+const useShop = (query?: string) => {
   const [books, setBooks] = useState<BookType[]>([]);
   const [headers, setHeaders] = useState<any>();
   const [params, setParams] = useSearchParams();
   const [loading, setLoading] = useState<boolean>(true);
 
-  const { id } = useParams();
-
-  const fetchAuthor = async () => {
-    const authorFetch = await AuthorUtils.getAuthorById(id!);
-    setAuthor(authorFetch);
-  };
-
   const fetchBooks = async (q: string) => {
-    const { data: booksFetch, headers } = await BookUtils.getBooksByAuthorId(
-      id!,
-      `&_expand=author${query}${q}`
+    const { data: booksFetch, headers } = await BookUtils.fetchBooks(
+      `?_expand=author${query}${q}`
     );
     let bookList: BookType[] = [];
     if (booksFetch.length > 0) {
@@ -48,11 +39,10 @@ const useAuthorBooks = (query?: string) => {
     if (language) q = q + '&language_like=' + language;
     if (format) q = q + '&format_like=' + format;
     if (price) q = q + '&price' + price;
-    fetchAuthor();
     fetchBooks(q);
-  }, [id, query, params]);
+  }, [query, params]);
 
-  return { author, books, headers, loading };
+  return { books, headers, loading };
 };
 
-export default useAuthorBooks;
+export default useShop;

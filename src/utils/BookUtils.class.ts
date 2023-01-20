@@ -34,4 +34,20 @@ export default class BookUtils {
     const res = await api.get(`/books?authorId=${authorId}${query}`);
     return res;
   };
+
+  public static getBooksByCategoryId = async (
+    categoryId: string,
+    query: string = ''
+  ): AxiosPromise<BookType[]> => {
+    const res = await api.get(`/books?categoryId=${categoryId}${query}`);
+    return res;
+  };
+
+  public static getBooksByListId = async (
+    listId: string,
+    query: string = ''
+  ): AxiosPromise<BookType[]> => {
+    const res = await api.get(`/books?listId=${listId}${query}`);
+    return res;
+  };
 }
