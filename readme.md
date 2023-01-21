@@ -2,6 +2,8 @@
 
 > online book store with react and redux cloned from [book depository](https://bookdepository.com)
 
+![book depository](https://i.ibb.co/8c6Fxv3/book.png)
+
 > ## Used APIs
 
 - JSON-SERVER: Main server to fetch data.
