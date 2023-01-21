@@ -1,14 +1,8 @@
 import BookType from '@objTypes/BookType';
-import BookUtils from '@utils/BookUtils.class';
-import { Button } from 'react-bootstrap';
-import { MdStar, MdStarHalf } from 'react-icons/md';
 import { Link, useNavigate } from 'react-router-dom';
-import styles from './BookCard.module.css';
-import { useDispatch } from 'react-redux';
-import { addItemToCart } from '@store/CartSlice';
-import { toast } from 'react-toastify';
-import Rating from './Rating';
 import AddToCartBtn from './AddToCartBtn';
+import styles from './BookCard.module.css';
+import Rating from './Rating';
 
 const BookCard: React.FC<{
   book: BookType;
@@ -29,7 +23,7 @@ const BookCard: React.FC<{
         <Link to={`/authors/${book.author?.id}`} className={styles.bookAuthor}>
           {book.author?.first_name} {book.author?.last_name}
         </Link>
-        <Rating book={book} />
+        <Rating book={book} showRating={false} />
         <p className="p-0 m-0 text-secondary fs-6">
           {new Date(book.publication_date).toDateString()}
         </p>
