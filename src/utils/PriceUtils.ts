@@ -7,7 +7,7 @@ export default class PriceUtils {
     const currency = localStorage.getItem('currency') ?? 'USD';
     if (currency === 'USD') {
       //   return `$ ${amount}`;
-      return { amount: amount, code: '$' };
+      return { amount: new Number(amount).toFixed(2), code: '$' };
     }
 
     const res = await axios.get(
@@ -22,6 +22,6 @@ export default class PriceUtils {
       }
     );
 
-    return { amount: res.data, code: 'E£' };
+    return { amount: new Number(res.data).toFixed(2), code: 'E£' };
   };
 }

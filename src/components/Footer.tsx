@@ -11,6 +11,7 @@ import {
 import paymentOptions from '../assets/images/payment-options.png';
 import api from '@utils/Api';
 import { toast } from 'react-toastify';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   const emailInput = useRef<HTMLInputElement>(null);
@@ -89,21 +90,34 @@ const Footer: React.FC = () => {
           <Col>
             <h5 className="d-none d-md-block px-2 pt-2">Explore</h5>
             <ul className={`p-2 ${styles.footerList}`}>
-              <li>About us</li>
+              <li>
+                <Link to="/about">About us</Link>
+              </li>
               <li>Sitemap</li>
               <li>Bookmarks</li>
-              <li>Sign in/ Join</li>
+              <li>
+                <Link to="/auth">Sign in/ Join</Link>
+              </li>
             </ul>
           </Col>
           <Col>
             <h5 className="d-none d-md-block px-2 pt-2">How can we help?</h5>
             <ul className={`p-2 ${styles.footerList}`}>
-              <li>Help</li>
-              <li>Contact us</li>
-              <li>Where's my stuff?</li>
-              <li>Where do you deliver?</li>
-              <li>Cancel my order</li>
-              <li>Return my order</li>
+              <li>
+                <Link to="/help">Help</Link>
+              </li>
+              <li>
+                <Link to="/help">Where's my stuff?</Link>
+              </li>
+              <li>
+                <Link to="/help">Where do you deliver?</Link>
+              </li>
+              <li>
+                <Link to="/help">Cancel my order</Link>
+              </li>
+              <li>
+                <Link to="/help">Return my order</Link>
+              </li>
             </ul>
           </Col>
           <Col>

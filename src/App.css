@@ -16,3 +16,13 @@ li {
 .priceColor {
   color: #ff0072;
 }
+
+.accordion-button:focus {
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #000 !important;
+  background-color: #fff !important;
+}

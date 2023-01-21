@@ -16,6 +16,7 @@ import styles from './CartPage.module.css';
 import { RiShoppingBasket2Fill } from 'react-icons/ri';
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
+import Rating from '@components/Rating';
 
 const CartPage: React.FC = () => {
   const totalCartPrice = useTotalCartPrice();
@@ -24,21 +25,6 @@ const CartPage: React.FC = () => {
   const books = useCartItems();
   const dispatch = useDispatch();
   const navigate = useNavigate();
-
-  const renderRating = (rate: number): JSX.Element[] => {
-    let stars = [];
-    for (let i = 0; i < 5; i++) {
-      if (rate >= 1) {
-        stars.push(<MdStar color="#FFD700" key={i} />);
-      } else if (rate >= 0.5) {
-        stars.push(<MdStarHalf color="#FFD700" key={i} />);
-      } else {
-        stars.push(<MdStar color="#D3D3D3" key={i} />);
-      }
-      rate--;
-    }
-    return stars;
-  };
 
   const removeItem = (id: number, price: number): void => {
     dispatch(RemoveItemFormCart({ id, price }));
@@ -117,10 +103,7 @@ const CartPage: React.FC = () => {
                       </Col>
                       <Col xs={6} md={6}>
                         <p className="fw-bold">{book.title}</p>
-                        <div>
-                          {renderRating(BookUtils.calcRating(book.reviews))} (
-                          {book.reviews?.length ?? 0})
-                        </div>
+                        <Rating book={book} showRating={false} />
                         <p className={`${styles.smallP} mb-2`}>
                           {book.format}, {book.language} |{' '}
                           {book.author?.first_name} {book.author?.last_name}

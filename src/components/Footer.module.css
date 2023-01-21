@@ -45,7 +45,9 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.432);
   padding: 0.5rem 0;
 }
-
+.footerList li a {
+  color: #fff !important;
+}
 .width,
 .newsParagraph {
   width: 100%;

@@ -183,6 +183,10 @@ const AuthPage: React.FC = () => {
                         value: true,
                         message: 'Password is required.',
                       },
+                      minLength: {
+                        value: 8,
+                        message: 'Min length is 8.',
+                      },
                     })}
                   />
                   {joinErrors.joinPassword && (

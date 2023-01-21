@@ -10,12 +10,15 @@ import SingleBookPage from '@pages/SingleBookPage';
 import CategoryBooksPage from '@pages/CategoryBooksPage';
 import ShopPage from '@pages/ShopPage';
 import ReadingListBooksPage from '@pages/ReadingListBooksPage';
+import HelpPage from '@pages/HelpPage';
+import WishlistPage from '@pages/WishlistPage';
+import AccountPage from '@pages/AccountPage';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
-    // errorElement: <NotFoundPage />,
+    errorElement: <NotFoundPage />,
     children: [
       {
         path: '/',
@@ -53,6 +56,18 @@ const router = createBrowserRouter([
       {
         path: '/shop',
         element: <ShopPage />,
+      },
+      {
+        path: '/help',
+        element: <HelpPage />,
+      },
+      {
+        path: '/wishlist',
+        element: <WishlistPage />,
+      },
+      {
+        path: '/account',
+        element: <AccountPage />,
       },
     ],
   },

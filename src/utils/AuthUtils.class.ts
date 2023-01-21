@@ -25,4 +25,14 @@ export default class AuthUtils {
     }
     return false;
   };
+
+  public static changePassword = async (email: string, newPWD: string) => {
+    const { data: user } = await api.get(`/users?email_like=${email}`);
+    if (user[0]) {
+      api.put(`/users/${user[0].id}`, {
+        password: await bcrypt.hash(newPWD, 10),
+        email: email,
+      });
+    }
+  };
 }

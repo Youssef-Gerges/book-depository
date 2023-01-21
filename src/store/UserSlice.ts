@@ -17,9 +17,13 @@ export const userSlice = createSlice({
       sessionStorage.setItem('user', action.payload);
       return { ...state, email: action.payload };
     },
+    logoutUser: (state, action) => {
+      sessionStorage.removeItem('user');
+      state.email = '';
+    },
   },
 });
 
-export const { signIn } = userSlice.actions;
+export const { signIn, logoutUser } = userSlice.actions;
 export const selectUser = (state: RootState) => state.user;
 export default userSlice.reducer;

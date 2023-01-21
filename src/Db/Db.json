@@ -9424,9 +9424,8 @@
       "id": 7
     },
     {
+      "password": "$2a$10$pOm/cxiKkeLBqQiz/JcUsuTLUNjS8ojU6pkux1wMGzS2DudbK5NA.",
       "email": "admin@site.com",
-      "password": "$2a$10$u7Nkw89Le9dBEqvgEY/szO5ODTTv1waej/tHWMcgFUiJQxs9a8qAa",
-      "name": "admin",
       "id": 8
     }
   ],

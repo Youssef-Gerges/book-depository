@@ -67,11 +67,7 @@ const Nav: React.FC = () => {
             <Link to="/" className={`${styles.link_group} pe-3 me-2`}>
               <RiHome2Fill className={styles.icon} />
             </Link>
-            <Link className={`${styles.link_group} me-2`} to="/">
-              <RiMailLine className={styles.icon} />
-              <span className="p-2">Contact us</span>
-            </Link>
-            <Link className={styles.link_group} to="/">
+            <Link className={styles.link_group} to="/help">
               <HiOutlineExclamationCircle className={styles.icon} />
               <span className="p-2">Help</span>
             </Link>
@@ -87,7 +83,7 @@ const Nav: React.FC = () => {
               <BiCompass className={styles.icon} />
               <span className="p-2">Order Status</span>
             </Link>
-            <Link to="/" className={`${styles.link_group} me-2`}>
+            <Link to="/wishlist" className={`${styles.link_group} me-2`}>
               <BiHeart className={styles.icon} />
               <span className="p-2">Wishlist</span>
             </Link>
@@ -266,11 +262,7 @@ const Nav: React.FC = () => {
             <MenuItem>
               <RiHome2Fill className={styles.icon} /> Home
             </MenuItem>
-            <MenuItem>
-              <RiMailLine className={styles.icon} />
-              <span className="p-2">Contact us</span>
-            </MenuItem>
-            <MenuItem>
+            <MenuItem href="/help">
               <HiOutlineExclamationCircle className={styles.icon} />
               <span className="p-2">Help</span>
             </MenuItem>

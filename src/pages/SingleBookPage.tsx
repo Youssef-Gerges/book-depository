@@ -1,4 +1,5 @@
 import AddToCartBtn from '@components/AddToCartBtn';
+import AddToWishBtn from '@components/AddToWishBtn';
 import Rating from '@components/Rating';
 import RatingInput from '@components/RatingInput';
 import { selectUser } from '@store/UserSlice';
@@ -121,6 +122,11 @@ const SingleBookPage: React.FC = () => {
                     bookId={book.id}
                     price={Number.parseFloat(book.price.amount)}
                     cName="w-100 py-2 fw-bold"
+                  />
+                  <AddToWishBtn
+                    bookId={book.id}
+                    price={Number.parseFloat(book.price.amount)}
+                    cName="w-100 py-2 fw-bold mt-2"
                   />
                 </Card.Footer>
               </Card>
